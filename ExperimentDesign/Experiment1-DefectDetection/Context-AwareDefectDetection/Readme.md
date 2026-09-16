@@ -1,3 +1,7 @@
+### This repository includes the summaries generated for the 3 versions selected and experiment related artifacts
+
+### Prompts used for defect detection
+
 ### Listing 7: Ambiguity Detection Using Codebase Knowledge
 ```
 {Ambiguity Sub-Class}: Definition
