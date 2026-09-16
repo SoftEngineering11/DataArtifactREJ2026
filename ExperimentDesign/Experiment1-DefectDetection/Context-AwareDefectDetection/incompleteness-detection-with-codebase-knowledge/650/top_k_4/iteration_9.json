@@ -1,0 +1,40 @@
+{
+    "unique_id": "52388615-0031-4a2c-80b0-f89655e3ff23",
+    "type": "Incompleteness",
+    "id": 52,
+    "feature_request_number": 650,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 0,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": null,
+    "FinalAmbiguitySubType": null,
+    "TextUsedForAnnotation": "Request Number - 650 | Request Title - Disable SMS only on out-of-country contacts | Request Description - This is a feature request. It would be very handy if I can enable SMS fallback only for the contacts in my country but disable them for contacts out of my country. Usually out-of-country SMS rates are quite high and can run up quite a bill if you have the feature enabled to fallback on SMS. Thanks.",
+    "category": "Incompleteness",
+    "comment": "The request is missing several elements defining how the feature should be implemented and what metric should be used for determining when the feature should be active or inactive.",
+    "question": [
+        "Should this be an automatic change to how SMS fallback is enacted, or an additional sub-setting of SMS fallback?",
+        " Should this be based solely on the sender's location (i.e. in the same country as their cellular provider), or both the sender and recipient?",
+        " What method is being used to determine when a contact is out-of-country (e.g. country code on phone number, current cell tower visitor registry location)?"
+    ],
+    "interpretation": "Should this be an automatic change to how SMS fallback is enacted, or an additional sub-setting of SMS fallback?; Should this be based solely on the sender's location (i.e. in the same country as their cellular provider), or both the sender and recipient?; What method is being used to determine when a contact is out-of-country (e.g. country code on phone number, current cell tower visitor registry location)?",
+    "affectsDownstream": "Yes",
+    "affectDescription": "API usage, implementation methods and settings",
+    "text": "N/A",
+    "start": 0,
+    "end": 0,
+    "missing_information": "\"Criteria for determining which contacts are considered 'in my country'\", \"User interface changes required to implement this feature\", \"Potential performance impacts of implementing this feature\", \"Compatibility with existing user settings for SMS fallback\", \"Error handling procedures for when contact location cannot be determined\", \"Details on how the country of a contact is identified (e.g., based on phone number, user settings, etc.)\", \"Testing requirements and scenarios for this feature\"",
+    "transformed_missing_information": [
+        "Criteria for determining which contacts are considered 'in my country'",
+        "User interface changes required to implement this feature",
+        "Potential performance impacts of implementing this feature",
+        "Compatibility with existing user settings for SMS fallback",
+        "Error handling procedures for when contact location cannot be determined",
+        "Details on how the country of a contact is identified (e.g., based on phone number, user settings, etc.)",
+        "Testing requirements and scenarios for this feature"
+    ],
+    "prompt": "\n            Incompleteness: Missing information and lack of details regarding different parts of the feature request\n            You are a software analyst specializing in incompleteness detection in GitHub feature requests.\n            Carefully analyze the given feature request statement and the knowledge summary of the codebase, and determine whether it is incomplete. If the request is incomplete, identify the missing information required for completeness. You can use the knowledge summary of the codebase for this process. Include all the missing information in a single comma-separated list. Ensure that every element of the list is enclosed in quotation marks. If the request statement is complete, return Missing Information: No Defect Found.\n            Statement: Request Number - 650 | Request Title - Disable SMS only on out-of-country contacts | Request Description - This is a feature request. It would be very handy if I can enable SMS fallback only for the contacts in my country but disable them for contacts out of my country. Usually out-of-country SMS rates are quite high and can run up quite a bill if you have the feature enabled to fallback on SMS. Thanks.\n            ####\n            Knowledge Base Summary: [Checks if the given SMS message is exempt from being processed by the app.,Sends the SMS outbox using the SendReceiveService.,Sends MMS messages from the outbox.,If we're not the default SMS app, and we haven't prompted the user yet, prompt them to change the default SMS app.]\n            ####\n            Missing Information:\n            "
+}

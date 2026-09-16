@@ -1,0 +1,44 @@
+{
+    "unique_id": "821433ac-513c-43ef-a63c-aacc050ebec8",
+    "type": "Incompleteness",
+    "id": 93,
+    "feature_request_number": 1407,
+    "feature_version": "2.0.8",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 1,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Semantic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Semantic-Referential": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 1407 | Request Title - textsecure not an option when \"sharing\" an address book contact | Request Description - TextSecure is not an option when attempting to share a contact from the address book, in Android 4.4.2 when i select \"messaging\" it tells me \"messaging\" is not the default sms app. This would be a nice feature to have added to the app.",
+    "category": "Incompleteness",
+    "comment": "Design, implementation, and testing.",
+    "question": [
+        "Can you explain step by step what you are trying to achieve?",
+        " Are you sharing a contact from your contact list or are you trying to access your contacts on Signal?"
+    ],
+    "interpretation": "Steps to reproduce are missing and the exact feature that need to be implemented. ",
+    "affectsDownstream": "",
+    "affectDescription": "",
+    "text": "N/A",
+    "start": 0,
+    "end": 0,
+    "missing_information": "\"Specific steps to reproduce the issue\", \"Clarification on whether TextSecure is installed on the device\", \"Expectation of how TextSecure should integrate with the sharing feature\", \"Confirmation if the issue persists in versions other than Android 4.4.2\", \"Details on whether other sharing applications appear as options\", \"Clarification on whether TextSecure is set as the default messaging app\", \"Expected behavior when sharing a contact with TextSecure\", \"Confirmation if the issue is specific to sharing contacts or occurs with other data types\"",
+    "transformed_missing_information": [
+        "Specific steps to reproduce the issue",
+        "Clarification on whether TextSecure is installed on the device",
+        "Expectation of how TextSecure should integrate with the sharing feature",
+        "Confirmation if the issue persists in versions other than Android 4.4.2",
+        "Details on whether other sharing applications appear as options",
+        "Clarification on whether TextSecure is set as the default messaging app",
+        "Expected behavior when sharing a contact with TextSecure",
+        "Confirmation if the issue is specific to sharing contacts or occurs with other data types"
+    ],
+    "prompt": "\n            Incompleteness: Missing information and lack of details regarding different parts of the feature request\n            You are a software analyst specializing in incompleteness detection in GitHub feature requests.\n            Carefully analyze the given feature request statement and the knowledge summary of the codebase, and determine whether it is incomplete. If the request is incomplete, identify the missing information required for completeness. You can use the knowledge summary of the codebase for this process. Include all the missing information in a single comma-separated list. Ensure that every element of the list is enclosed in quotation marks. If the request statement is complete, return Missing Information: No Defect Found.\n            Statement: Request Number - 1407 | Request Title - textsecure not an option when \"sharing\" an address book contact | Request Description - TextSecure is not an option when attempting to share a contact from the address book, in Android 4.4.2 when i select \"messaging\" it tells me \"messaging\" is not the default sms app. This would be a nice feature to have added to the app.\n            ####\n            Knowledge Base Summary: [Shares the given text by prompting the user with a dialog . Call this from your Activity 's onClickListener() . Note that the user will be prompted to choose which application to share with . By default , all applications that can handle text will be shown in the list . You can filter this list by calling the overload below .,Share the given text via the default Android share mechanism.,If we're not the default SMS app, prompt the user to change it.]\n            ####\n            Missing Information:\n            "
+}

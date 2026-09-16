@@ -1,0 +1,50 @@
+{
+    "unique_id": "1e464eb6-aac3-425a-9362-3a0eccc0e781",
+    "type": "Incompleteness",
+    "id": 2,
+    "feature_request_number": 587,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 4,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 1,
+        "Vagueness": 2,
+        "Syntactic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 1,
+        "Vagueness-N/a": 2,
+        "Syntactic-Elliptical": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 587 | Request Title - Support an 'invite friends' feature. | Request Description - How about having a handy link (and easily found) to allow users to share your app?",
+    "category": "Incompleteness",
+    "comment": "The feature request doesn't describe the expected actions that would result from clicking the link or how a user should access the link.",
+    "question": [
+        "Where in the user interface should a user obtain this link?",
+        " What actions should occur when a new user follows the link? (e.g. be taken to the app store page, automatically add the link provider as a friend, etc.)"
+    ],
+    "interpretation": "What should the link itself do or point to? Simply the app's store page? Should it automatically associate the new user as a friend of the link provider?; Where in the user interface should this link be found?",
+    "affectsDownstream": "Yes",
+    "affectDescription": "Incomplete information might carry expectations of follow-on tasks associated with clicking the provided link.",
+    "text": "N/A",
+    "start": 0,
+    "end": 0,
+    "missing_information": "\"target platform for the 'invite friends' feature\", \"method for integration with existing sharing functionalities\", \"clarification on the type of link (URL, deep link, etc.)\", \"user interface details on the placement of the 'invite friends' link\", \"authentication or permission considerations\", \"metrics or logging requirements for tracking the use of the feature\", \"specific user experience or flow\", \"target audience for this feature (new users, existing users, etc.)\", \"localization requirements\", \"potential impact on existing app workflows or features\"",
+    "transformed_missing_information": [
+        "target platform for the 'invite friends' feature",
+        "method for integration with existing sharing functionalities",
+        "clarification on the type of link (URL, deep link, etc.)",
+        "user interface details on the placement of the 'invite friends' link",
+        "authentication or permission considerations",
+        "metrics or logging requirements for tracking the use of the feature",
+        "specific user experience or flow",
+        "target audience for this feature (new users, existing users, etc.)",
+        "localization requirements",
+        "potential impact on existing app workflows or features"
+    ],
+    "prompt": "\n            Incompleteness: Missing information and lack of details regarding different parts of the feature request\n            You are a software analyst specializing in incompleteness detection in GitHub feature requests.\n            Carefully analyze the given feature request statement and the knowledge summary of the codebase, and determine whether it is incomplete. If the request is incomplete, identify the missing information required for completeness. You can use the knowledge summary of the codebase for this process. Include all the missing information in a single comma-separated list. Ensure that every element of the list is enclosed in quotation marks. If the request statement is complete, return Missing Information: No Defect Found.\n            Statement: Request Number - 587 | Request Title - Support an 'invite friends' feature. | Request Description - How about having a handy link (and easily found) to allow users to share your app?\n            ####\n            Knowledge Base Summary: [Shares the given text by creating a chooser for the user to select an app to share with .,Shares the given text by constructing a text-only intent and passing it to the registered sharing apps.,Show a dialog prompting the user to download the app from the Play Store if it is not installed on their device.,Shares the given text by encoding it as a barcode such that another user can scan the text off the screen of the device. If the ZXing app is not installed, shows a dialog to prompt the user to download it.,Show an alert dialog with the specified title and message.,Set up the recent tab in the contact selection activity.,Gets the last seen version of the app from shared preferences.,Launches the Market app if available, or else browses to the Market in the browser,If we're not the default SMS app, and we haven't prompted the user yet, prompt them to change the default SMS app.,Displays an alert dialog with the given title, message, and icon.]\n            ####\n            Missing Information:\n            "
+}

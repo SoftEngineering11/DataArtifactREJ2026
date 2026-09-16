@@ -1,0 +1,43 @@
+{
+    "unique_id": "e23791e9-79f7-4e3e-96f0-537312954fe9",
+    "type": "Incompleteness",
+    "id": 71,
+    "feature_request_number": 592,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 3,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Pragmatic": 3
+    },
+    "FinalAmbiguitySubType": {
+        "Pragmatic-Deictic": 3
+    },
+    "TextUsedForAnnotation": "Request Number - 592 | Request Title - Feature - Emoji | Request Description - I hate emoji, but this guy on this issue requested it and I figure I'll help him/you out by making a new issue/feature request.",
+    "category": "Incompleteness",
+    "comment": "The feature request does not include an actual request, but instead just a reference to another person making a request. Information about the other person's request is required for this feature request to be actionable.",
+    "question": [
+        "What is the request being made by the other person?"
+    ],
+    "interpretation": "What is the request being made by the other person?",
+    "affectsDownstream": "Yes",
+    "affectDescription": "The identity of the feature to be implemented",
+    "text": "N/A",
+    "start": 0,
+    "end": 0,
+    "missing_information": "\"Missing detailed requirements for the feature request\", \"Lack of a clear description of the functionality desired\", \"No information on user interface changes needed\", \"Missing details on how the new feature should interact with existing functionality\", \"No specific user story or use case provided\", \"Lack of acceptance criteria for the feature\", \"Missing technical specifications or constraints\", \"Absence of priority or impact assessment for the feature\"",
+    "transformed_missing_information": [
+        "Missing detailed requirements for the feature request",
+        "Lack of a clear description of the functionality desired",
+        "No information on user interface changes needed",
+        "Missing details on how the new feature should interact with existing functionality",
+        "No specific user story or use case provided",
+        "Lack of acceptance criteria for the feature",
+        "Missing technical specifications or constraints",
+        "Absence of priority or impact assessment for the feature"
+    ],
+    "prompt": "\n            Incompleteness: Missing information and lack of details regarding different parts of the feature request\n            You are a software analyst specializing in incompleteness detection in GitHub feature requests.\n            Carefully analyze the given feature request statement and the knowledge summary of the codebase, and determine whether it is incomplete. If the request is incomplete, identify the missing information required for completeness. You can use the knowledge summary of the codebase for this process. Include all the missing information in a single comma-separated list. Ensure that every element of the list is enclosed in quotation marks. If the request statement is complete, return Missing Information: No Defect Found.\n            Statement: Request Number - 592 | Request Title - Feature - Emoji | Request Description - I hate emoji, but this guy on this issue requested it and I figure I'll help him/you out by making a new issue/feature request.\n            ####\n            Knowledge Base Summary: [Emojifies the given text using the large emoji style.,Get the Emoji instance for this context.,Handles click events on the emoji grid, replacing the selected text with the corresponding emoji and updating the recently used emojis if necessary.,Toggles between the emoji and IME toggle icons.,Returns a drawable for the emoji at the given position.,Returns a drawable for the given emoji asset name.,Converts an emoji asset name to its corresponding unicode character.,Gets the list of recently used emoji from shared preferences.,Returns the number of emoji pages.,Returns a drawable for the recently used emoji at the given position.]\n            ####\n            Missing Information:\n            "
+}

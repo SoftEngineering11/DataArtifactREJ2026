@@ -1,0 +1,47 @@
+{
+    "unique_id": "1ea4581c-1469-43ec-bc88-40927924721f",
+    "type": "Incompleteness",
+    "id": 75,
+    "feature_request_number": 496,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 1,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 496 | Request Title - Feature Request: Ability to change maximum size of MMS | Request Description - I have seen this feature on other third party messaging apps it'd be great.  Thanks!",
+    "category": "Incompleteness",
+    "comment": "The feature request is missing information needed to implement the feature, such as how the feature would be accessed, enabled, implemented, or enforced.",
+    "question": [
+        "Where in the app should this feature be enabled?",
+        " Does this apply to incoming MMS, outgoing MMS, or both? Should each have a different setting?",
+        " What size values should be provided?",
+        " How should this limitation be implemented? For example, should messages be screen by the server before transmitting them to the user?",
+        " Is the purpose of this feature based on data usage? If so, should its enforcement be linked to current device connection type?"
+    ],
+    "interpretation": "Where in the app should this feature be enabled?; Does this apply to incoming MMS, outgoing MMS, or both? Should each have a different setting?; What size values should be provided?; How should this limitation be implemented? For example, should messages be screen by the server before transmitting them to the user?; Is the purpose of this feature based on data usage? If so, should its enforcement be linked to current device connection type?",
+    "affectsDownstream": "Yes",
+    "affectDescription": "Where in the app infrastructure the feature would be implemented",
+    "text": "N/A",
+    "start": 0,
+    "end": 0,
+    "missing_information": "\"Specific desired maximum size value for MMS\", \"Justification for changing the maximum size\", \"Potential impact on existing functionality\", \"Compatibility with current system architecture\", \"User interface changes needed\", \"Any additional performance considerations\", \"Expected user scenarios or use cases\", \"Priority or timeline for implementation\"",
+    "transformed_missing_information": [
+        "Specific desired maximum size value for MMS",
+        "Justification for changing the maximum size",
+        "Potential impact on existing functionality",
+        "Compatibility with current system architecture",
+        "User interface changes needed",
+        "Any additional performance considerations",
+        "Expected user scenarios or use cases",
+        "Priority or timeline for implementation"
+    ],
+    "prompt": "\n            Incompleteness: Missing information and lack of details regarding different parts of the feature request\n            You are a software analyst specializing in incompleteness detection in GitHub feature requests.\n            Carefully analyze the given feature request statement and the knowledge summary of the codebase, and determine whether it is incomplete. If the request is incomplete, identify the missing information required for completeness. You can use the knowledge summary of the codebase for this process. Include all the missing information in a single comma-separated list. Ensure that every element of the list is enclosed in quotation marks. If the request statement is complete, return Missing Information: No Defect Found.\n            Statement: Request Number - 496 | Request Title - Feature Request: Ability to change maximum size of MMS | Request Description - I have seen this feature on other third party messaging apps it'd be great.  Thanks!\n            ####\n            Knowledge Base Summary: [Sets the attributes of a media MMS message.,Sends MMS messages from the outbox.,Sends an MMS message with a radio change.,Sets the attributes for a notification MMS message .]\n            ####\n            Missing Information:\n            "
+}

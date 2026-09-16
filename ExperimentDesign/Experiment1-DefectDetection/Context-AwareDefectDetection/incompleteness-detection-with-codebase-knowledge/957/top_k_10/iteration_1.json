@@ -1,0 +1,42 @@
+{
+    "unique_id": "9a74be50-b57a-4f56-980d-790f563f1bb9",
+    "type": "Incompleteness",
+    "id": 56,
+    "feature_request_number": 957,
+    "feature_version": "2.0.3",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 3,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 3
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 3
+    },
+    "TextUsedForAnnotation": "Request Number - 957 | Request Title - Delivery reports for PUSHed messages? | Request Description - SMS messages support the notion of a delivery report that allows me to see when a message was actually delivered to the recipient. I miss that feature for PUSHed messages, though. It seems there is no way to request a delivery report?",
+    "category": "Incompleteness",
+    "comment": "Details on how the delivery report should be designed and implemented are missing.",
+    "question": [
+        "Can you specify details about the delivery report and how you want that report to appear?"
+    ],
+    "interpretation": "The delivery report can be designed as a separate GUI screen reporting the messages that are sent, delivered, received, or read; The delivery report can be designed as a notification sent to the user's phone Home Screen for messages that are sent, delivered, received, or read; The delivery report can be a simple status change for messages that are sent, delivered, or read right under the message in the conversation screen. ",
+    "affectsDownstream": "Yes",
+    "affectDescription": "This will affect the design, implementation, and testing of the feature request. ",
+    "text": "N/A",
+    "start": 0,
+    "end": 0,
+    "missing_information": "\"Specifics on how delivery reports for PUSHed messages should be implemented\", \"Compatibility with existing message formats or protocols\", \"Impact on performance and network bandwidth\", \"User interface changes needed to display delivery reports\", \"Any security or privacy implications\", \"Testing requirements for delivery report functionality\", \"Dependencies or interactions with existing delivery report mechanisms for SMS messages\"",
+    "transformed_missing_information": [
+        "Specifics on how delivery reports for PUSHed messages should be implemented",
+        "Compatibility with existing message formats or protocols",
+        "Impact on performance and network bandwidth",
+        "User interface changes needed to display delivery reports",
+        "Any security or privacy implications",
+        "Testing requirements for delivery report functionality",
+        "Dependencies or interactions with existing delivery report mechanisms for SMS messages"
+    ],
+    "prompt": "\n            Incompleteness: Missing information and lack of details regarding different parts of the feature request\n            You are a software analyst specializing in incompleteness detection in GitHub feature requests.\n            Carefully analyze the given feature request statement and the knowledge summary of the codebase, and determine whether it is incomplete. If the request is incomplete, identify the missing information required for completeness. You can use the knowledge summary of the codebase for this process. Include all the missing information in a single comma-separated list. Ensure that every element of the list is enclosed in quotation marks. If the request statement is complete, return Missing Information: No Defect Found.\n            Statement: Request Number - 957 | Request Title - Delivery reports for PUSHed messages? | Request Description - SMS messages support the notion of a delivery report that allows me to see when a message was actually delivered to the recipient. I miss that feature for PUSHed messages, though. It seems there is no way to request a delivery report?\n            ####\n            Knowledge Base Summary: [Returns whether SMS delivery reports are enabled.,Sets the delivery report flag for this message.,Returns the delivery report flag value from the PDU headers.,Returns the delivery report flag value from the PDU headers.,Returns the delivery report flag value from the PDU headers.,Sets the delivery report value for this notification indication.,Sets the delivery report value for this PDU.,Returns the value of the REPORT_ALLOWED field, which indicates whether the sender of the message is allowed to send a delivery report for this message.,Returns the retrieve status of the message.,Gets the status value for this DeliveryInd.]\n            ####\n            Missing Information:\n            "
+}

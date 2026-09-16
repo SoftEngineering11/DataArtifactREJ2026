@@ -1,0 +1,48 @@
+{
+    "unique_id": "5a9693b1-bbfc-4df3-a639-f7c0b937f224",
+    "type": "Incompleteness",
+    "id": 27,
+    "feature_request_number": 801,
+    "feature_version": "2.0.3",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 2,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Semantic": 1,
+        "Lexical": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Semantic-Scope": 1,
+        "Lexical-Polysemy": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 801 | Request Title - Feature request: Mute Group (or any user) | Request Description - Sometimes friends in a group are discussing something I'm not interested in and my phone would go nuts vibrating and ringing all the time. A \"Mute for X minutes/hours\" feature would be awesome.",
+    "category": "Incompleteness",
+    "comment": "The scope of muting, the behavior when muted, and other expectations required to implement the requested feature aren't provided in the text.",
+    "question": [
+        "Where in the interface should this feature be accessed?",
+        " Should a new view be created to allow specifying the number of minutes, or should there be a default value(s)?",
+        " Is this mute intended to be universal to all notifications or does it need to be activated on a by-user/group basis?",
+        " What behavior should occur at the end of the mute period?",
+        " Should muting block the receipt of messages or just notifications?"
+    ],
+    "interpretation": "Where in the interface should this feature be accessed?; Should a new view be created to allow specifying the number of minutes, or should there be a default value(s)?; Is this mute intended to be universal to all notifications or does it need to be activated on a by-user/group basis?; What behavior should occur at the end of the mute period?; Should muting block the receipt of messages or just notifications?",
+    "affectsDownstream": "Yes",
+    "affectDescription": "Expectations for the implementation or behavior of the feature aren't provided.",
+    "text": "N/A",
+    "start": 0,
+    "end": 0,
+    "missing_information": "\"criteria for selecting a group or user to mute\", \"specification of Mute duration options (e.g., minutes, hours)\", \"indication of whether the mute applies to both vibrations and ringtones or either\", \"user interface design for muting feature\", \"scope of mute (individual user mute vs. entire group mute)\", \"mechanism for unmuting before the set duration expires\", \"interaction with existing notification settings\"",
+    "transformed_missing_information": [
+        "criteria for selecting a group or user to mute",
+        "specification of Mute duration options (e.g., minutes, hours)",
+        "indication of whether the mute applies to both vibrations and ringtones or either",
+        "user interface design for muting feature",
+        "scope of mute (individual user mute vs. entire group mute)",
+        "mechanism for unmuting before the set duration expires",
+        "interaction with existing notification settings"
+    ],
+    "prompt": "\n            Incompleteness: Missing information and lack of details regarding different parts of the feature request\n            You are a software analyst specializing in incompleteness detection in GitHub feature requests.\n            Carefully analyze the given feature request statement and the knowledge summary of the codebase, and determine whether it is incomplete. If the request is incomplete, identify the missing information required for completeness. You can use the knowledge summary of the codebase for this process. Include all the missing information in a single comma-separated list. Ensure that every element of the list is enclosed in quotation marks. If the request statement is complete, return Missing Information: No Defect Found.\n            Statement: Request Number - 801 | Request Title - Feature request: Mute Group (or any user) | Request Description - Sometimes friends in a group are discussing something I'm not interested in and my phone would go nuts vibrating and ringing all the time. A \"Mute for X minutes/hours\" feature would be awesome.\n            ####\n            Knowledge Base Summary: [Returns whether or not the notification vibrate preference is enabled.,Returns the notification ringtone preference value from the given context.,Returns whether all MMS messages should be intercepted.]\n            ####\n            Missing Information:\n            "
+}

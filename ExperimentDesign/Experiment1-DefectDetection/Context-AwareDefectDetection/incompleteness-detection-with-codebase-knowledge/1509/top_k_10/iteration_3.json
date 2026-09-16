@@ -1,0 +1,38 @@
+{
+    "unique_id": "711c159b-9243-4353-b7b5-f5d0dd9051f8",
+    "type": "Incompleteness",
+    "id": 98,
+    "feature_request_number": 1509,
+    "feature_version": "2.0.8",
+    "app_name": "Signal",
+    "FinalDefectType": "Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 0,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": null,
+    "FinalAmbiguitySubType": null,
+    "TextUsedForAnnotation": "Request Number - 1509 | Request Title - Adjustable font scaling | Request Description - It would be nice to be able to scale the font size of messages with respect to the system font size.  Sometimes it is convenient to see more conversation history on the screen at the expense of smaller sizes and reduced readability.",
+    "category": "Incompleteness",
+    "comment": "The feature request fails to include information about accessing or activating the requested feature, which a developer may want to know in order to meet the author's expectations.",
+    "question": [
+        "How should this feature be accessed and activated? In a settings menu, with a context-menu, something else?",
+        " Should this scaling be app-wide or per message thread?"
+    ],
+    "interpretation": "How should this feature be accessed and activated? In a settings menu, with a context-menu, something else?; Should this scaling be app-wide or per message thread?",
+    "affectsDownstream": "Yes",
+    "affectDescription": "Feature scope and interface location",
+    "text": "N/A",
+    "start": 0,
+    "end": 0,
+    "missing_information": "\"Criteria for font scaling relative to system font size\", \"Impact on existing UI and layout elements\", \"User settings or controls for adjusting font scaling\", \"Accessibility considerations for font scaling\", \"Testing requirements for different device types and screen sizes\", \"Potential conflicts with existing text emphasis features\"",
+    "transformed_missing_information": [
+        "Criteria for font scaling relative to system font size",
+        "Impact on existing UI and layout elements",
+        "User settings or controls for adjusting font scaling",
+        "Accessibility considerations for font scaling",
+        "Testing requirements for different device types and screen sizes",
+        "Potential conflicts with existing text emphasis features"
+    ],
+    "prompt": "\n            Incompleteness: Missing information and lack of details regarding different parts of the feature request\n            You are a software analyst specializing in incompleteness detection in GitHub feature requests.\n            Carefully analyze the given feature request statement and the knowledge summary of the codebase, and determine whether it is incomplete. If the request is incomplete, identify the missing information required for completeness. You can use the knowledge summary of the codebase for this process. Include all the missing information in a single comma-separated list. Ensure that every element of the list is enclosed in quotation marks. If the request statement is complete, return Missing Information: No Defect Found.\n            Statement: Request Number - 1509 | Request Title - Adjustable font scaling | Request Description - It would be nice to be able to scale the font size of messages with respect to the system font size.  Sometimes it is convenient to see more conversation history on the screen at the expense of smaller sizes and reduced readability.\n            ####\n            Knowledge Base Summary: [Sets the title bar to the appropriate title and subtitle based on the conversation type.,Sets the message size for this notification indication.,Returns the size of the message.,Returns the size of the message.,Adds emphasis to a given sequence by setting a small text appearance and italic style span.,Sets the minimum width of the conversation item based on the length of the indicator text, if visible. Otherwise, sets it to 0.,Sets the body text of the conversation item, including emoji if necessary.,Returns the size of the message in kilobytes.,Scale the given value based on the device's display density.,Formats the \"from\" field for a conversation list item, including applying bold/italic styling for unread messages and unnamed groups.]\n            ####\n            Missing Information:\n            "
+}

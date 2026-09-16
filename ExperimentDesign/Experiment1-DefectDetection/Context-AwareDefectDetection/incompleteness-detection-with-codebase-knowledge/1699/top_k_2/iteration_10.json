@@ -1,0 +1,41 @@
+{
+    "unique_id": "942c1047-a832-4598-8c10-7d741c23e705",
+    "type": "Incompleteness",
+    "id": 57,
+    "feature_request_number": 1699,
+    "feature_version": "2.0.8",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 1,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Syntactic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Syntactic-Coordination": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 1699 | Request Title - Add Android Wear support | Request Description - Hangouts has the possibility to answer with predefined answers or voice. Something similar would be awesome for TextSecure. Since all this works over notifications, this should be reasonably easy to intergrate.",
+    "category": "Incompleteness",
+    "comment": "By means of nominalization, a process (i.e., answering calls and recording predefined answers) is converted to an event. Additional information is missing regarding these two processes. ",
+    "question": [
+        "What options should be added to the app so that the user answers using the predefined answers or voice?",
+        "How to incorporate recording predefined answers or voice?"
+    ],
+    "interpretation": "The process of answering a call using a predefined answer or voice; The process of recording a predefined answer or voice; ",
+    "affectsDownstream": "Yes",
+    "affectDescription": "design, implementation, and testing",
+    "text": "N/A",
+    "start": 0,
+    "end": 0,
+    "missing_information": "\"Missing description of predefined answers or voice support for Android Wear\", \"Integration details with existing notification framework\", \"Handling incoming intent for responding via message on Android Wear\", \"Clarification on whether new permissions are required for Android Wear support\", \"Details on any user interface changes needed for Android Wear support\"",
+    "transformed_missing_information": [
+        "Missing description of predefined answers or voice support for Android Wear",
+        "Integration details with existing notification framework",
+        "Handling incoming intent for responding via message on Android Wear",
+        "Clarification on whether new permissions are required for Android Wear support",
+        "Details on any user interface changes needed for Android Wear support"
+    ],
+    "prompt": "\n            Incompleteness: Missing information and lack of details regarding different parts of the feature request\n            You are a software analyst specializing in incompleteness detection in GitHub feature requests.\n            Carefully analyze the given feature request statement and the knowledge summary of the codebase, and determine whether it is incomplete. If the request is incomplete, identify the missing information required for completeness. You can use the knowledge summary of the codebase for this process. Include all the missing information in a single comma-separated list. Ensure that every element of the list is enclosed in quotation marks. If the request statement is complete, return Missing Information: No Defect Found.\n            Statement: Request Number - 1699 | Request Title - Add Android Wear support | Request Description - Hangouts has the possibility to answer with predefined answers or voice. Something similar would be awesome for TextSecure. Since all this works over notifications, this should be reasonably easy to intergrate.\n            ####\n            Knowledge Base Summary: [Handle incoming intent for responding via message. Currently not supported by TextSecure.,Share the given text via the default Android share mechanism.]\n            ####\n            Missing Information:\n            "
+}

@@ -1,0 +1,41 @@
+{
+    "unique_id": "52388615-0031-4a2c-80b0-f89655e3ff23",
+    "type": "Incompleteness",
+    "id": 52,
+    "feature_request_number": 650,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 0,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": null,
+    "FinalAmbiguitySubType": null,
+    "TextUsedForAnnotation": "Request Number - 650 | Request Title - Disable SMS only on out-of-country contacts | Request Description - This is a feature request. It would be very handy if I can enable SMS fallback only for the contacts in my country but disable them for contacts out of my country. Usually out-of-country SMS rates are quite high and can run up quite a bill if you have the feature enabled to fallback on SMS. Thanks.",
+    "category": "Incompleteness",
+    "comment": "The request is missing several elements defining how the feature should be implemented and what metric should be used for determining when the feature should be active or inactive.",
+    "question": [
+        "Should this be an automatic change to how SMS fallback is enacted, or an additional sub-setting of SMS fallback?",
+        " Should this be based solely on the sender's location (i.e. in the same country as their cellular provider), or both the sender and recipient?",
+        " What method is being used to determine when a contact is out-of-country (e.g. country code on phone number, current cell tower visitor registry location)?"
+    ],
+    "interpretation": "Should this be an automatic change to how SMS fallback is enacted, or an additional sub-setting of SMS fallback?; Should this be based solely on the sender's location (i.e. in the same country as their cellular provider), or both the sender and recipient?; What method is being used to determine when a contact is out-of-country (e.g. country code on phone number, current cell tower visitor registry location)?",
+    "affectsDownstream": "Yes",
+    "affectDescription": "API usage, implementation methods and settings",
+    "text": "N/A",
+    "start": 0,
+    "end": 0,
+    "missing_information": "\"criteria for determining whether a contact is 'in country' or 'out of country'\", \"mechanism to identify and categorize contacts by country\", \"modifiable settings interface for enabling/disabling SMS fallback\", \"user notification for high charges when sending to out-of-country contacts\", \"confirmation on whether this feature should apply globally or per-message basis\", \"instructions on how to implement this feature in the existing send functionality\", \"clarification on how this feature interacts with existing GCM or MMS fallback\", \"details on how this change will be communicated to users\"",
+    "transformed_missing_information": [
+        "criteria for determining whether a contact is 'in country' or 'out of country'",
+        "mechanism to identify and categorize contacts by country",
+        "modifiable settings interface for enabling/disabling SMS fallback",
+        "user notification for high charges when sending to out-of-country contacts",
+        "confirmation on whether this feature should apply globally or per-message basis",
+        "instructions on how to implement this feature in the existing send functionality",
+        "clarification on how this feature interacts with existing GCM or MMS fallback",
+        "details on how this change will be communicated to users"
+    ],
+    "prompt": "\n            Incompleteness: Missing information and lack of details regarding different parts of the feature request\n            You are a software analyst specializing in incompleteness detection in GitHub feature requests.\n            Carefully analyze the given feature request statement and the knowledge summary of the codebase, and determine whether it is incomplete. If the request is incomplete, identify the missing information required for completeness. You can use the knowledge summary of the codebase for this process. Include all the missing information in a single comma-separated list. Ensure that every element of the list is enclosed in quotation marks. If the request statement is complete, return Missing Information: No Defect Found.\n            Statement: Request Number - 650 | Request Title - Disable SMS only on out-of-country contacts | Request Description - This is a feature request. It would be very handy if I can enable SMS fallback only for the contacts in my country but disable them for contacts out of my country. Usually out-of-country SMS rates are quite high and can run up quite a bill if you have the feature enabled to fallback on SMS. Thanks.\n            ####\n            Knowledge Base Summary: [Checks if the given SMS message is exempt from being processed by the app.,Sends the SMS outbox using the SendReceiveService.,Sends MMS messages from the outbox.,If we're not the default SMS app, and we haven't prompted the user yet, prompt them to change the default SMS app.,Send all outgoing messages.,This receiver is used to abort the broadcast of the SMS_RECEIVED intent, which would otherwise be passed on to the default SMS app.,Returns the recipients of the outgoing text message.,Sends a text message using either GCM or SMS, depending on whether the destination number is in the filter.,Checks if the received SMS is relevant for the app.,Processes incoming SMS messages and handles them accordingly.,Fallback to sending MMS with radio and proxy if necessary.,This receiver is used to abort the broadcast of the SMS_RECEIVED intent.,Sends an SMS text message to the specified recipient with the given message, using the default SMS manager. Includes pending intents for delivery and sending status.,Checks if the app is set as the default SMS provider on the device.,Handles the result of a sent SMS message, marking it as sent, failed, or outbox depending on the result code.,Delivers an SMS message using GCM transport.,Callback for progress updates during the SMS database migration process.,Sends a notification to the MMS server that the message has been retrieved. This is used to prevent the server from sending the message again.,Called when a SMS is received or delivered. If it is a challenge, sends a broadcast with the challenge data. If it is a relevant SMS, starts a service to handle it.,If sending MMS fails, fall back to sending with radio only and handle the send action.]\n            ####\n            Missing Information:\n            "
+}

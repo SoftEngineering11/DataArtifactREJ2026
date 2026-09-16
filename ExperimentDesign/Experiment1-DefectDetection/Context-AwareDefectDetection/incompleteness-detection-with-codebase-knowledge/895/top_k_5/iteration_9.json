@@ -1,0 +1,39 @@
+{
+    "unique_id": "29f5e442-c368-42e0-8774-848b39727e86",
+    "type": "Incompleteness",
+    "id": 89,
+    "feature_request_number": 895,
+    "feature_version": "2.0.3",
+    "app_name": "Signal",
+    "FinalDefectType": "Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 0,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": null,
+    "FinalAmbiguitySubType": null,
+    "TextUsedForAnnotation": "Request Number - 895 | Request Title - Feature request: Add an option for 'Delayed Sending' | Request Description - I would like a 'Delayed Sending' option to be added to the settings. This is very useful in case you left an embarrassing typo, forgot something important or if you just change your mind and don't want to send the message. Both Chomp SMS and Handcent SMS have this excellent feature. Delay options from 1 to 5 seconds should be enough. Thanks!",
+    "category": "Incompleteness",
+    "comment": "The feature request does not specify which settings the feature should be added to, which leaves incomplete information about the implementation and granularity of the feature.",
+    "question": [
+        "In which settings should this be implemented? Global settings, each message thread's settings, or somewhere else?"
+    ],
+    "interpretation": "In which settings should this be implemented? Global settings or per-message?",
+    "affectsDownstream": "Yes",
+    "affectDescription": "Where in the UI to implement",
+    "text": "N/A",
+    "start": 0,
+    "end": 0,
+    "missing_information": "\"Technical feasibility assessment\", \"Estimated impact on current architecture\", \"User interface design for the 'Delayed Sending' option\", \"Integration with existing message settings and preferences\", \"Impact on message priority and expiry settings\", \"Testing strategy for the 'Delayed Sending' feature\", \"Potential conflicts with SMS fallback behavior\", \"User permissions or approval for delayed messages\"",
+    "transformed_missing_information": [
+        "Technical feasibility assessment",
+        "Estimated impact on current architecture",
+        "User interface design for the 'Delayed Sending' option",
+        "Integration with existing message settings and preferences",
+        "Impact on message priority and expiry settings",
+        "Testing strategy for the 'Delayed Sending' feature",
+        "Potential conflicts with SMS fallback behavior",
+        "User permissions or approval for delayed messages"
+    ],
+    "prompt": "\n            Incompleteness: Missing information and lack of details regarding different parts of the feature request\n            You are a software analyst specializing in incompleteness detection in GitHub feature requests.\n            Carefully analyze the given feature request statement and the knowledge summary of the codebase, and determine whether it is incomplete. If the request is incomplete, identify the missing information required for completeness. You can use the knowledge summary of the codebase for this process. Include all the missing information in a single comma-separated list. Ensure that every element of the list is enclosed in quotation marks. If the request statement is complete, return Missing Information: No Defect Found.\n            Statement: Request Number - 895 | Request Title - Feature request: Add an option for 'Delayed Sending' | Request Description - I would like a 'Delayed Sending' option to be added to the settings. This is very useful in case you left an embarrassing typo, forgot something important or if you just change your mind and don't want to send the message. Both Chomp SMS and Handcent SMS have this excellent feature. Delay options from 1 to 5 seconds should be enough. Thanks!\n            ####\n            Knowledge Base Summary: [Sets the preference for whether the user has been prompted to set Signal as the default SMS provider.,Sets the priority of the message.,Sets the expiry time for the message.,Sets the date of the message delivery.,Returns whether SMS fallback is enabled, defaulting to true if not set.]\n            ####\n            Missing Information:\n            "
+}
