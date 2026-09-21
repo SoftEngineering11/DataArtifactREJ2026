@@ -1,0 +1,36 @@
+{
+    "unique_id": "24e1a910-8876-4d9b-8ece-68d07ed28d36",
+    "type": "Lexical",
+    "id": 22,
+    "feature_request_number": 1692,
+    "feature_version": "2.0.8",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity",
+    "FinalDefectCount": {
+        "Ambiguity": 2,
+        "Incompleteness": 0
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 2
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 2
+    },
+    "TextUsedForAnnotation": "Request Number - 1692 | Request Title - sms delivery report: show received time in message details | Request Description - when a sms delivery report is received, the time the other user received the message (afaik the done date ) should be saved and it should be possible to view it in message details. This way one could see when the other user received the message (not only that is was received). edit: if someone can give me a hint where to look/start in the code to implement this, I'd try to make a pull request (but I just glanced through the code and cannot find a starting point ... maybe it's simply too late already ;-))",
+    "category": "Ambiguity",
+    "label": "Lexical",
+    "subclass": "Polysemy",
+    "comment": "The word 'should' has multiple meanings, creating two interpretations based on which is used.",
+    "question": [
+        "When you wrote \"should be saved\", did you mean \"is likely already saved\", \"is recommended to be saved\", or something else?"
+    ],
+    "interpretation": "is likely to; is recommended to",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "should",
+    "start": 231,
+    "end": 237,
+    "missing_information": "No Defect Found.",
+    "transformed_missing_information": [],
+    "prompt": "\n            Lexical ambiguity: Lexical ambiguity occurs when a word has multiple meanings, making its interpretation dependent on the context. It can arise in two forms: (1) when a word has unrelated meanings despite sharing the same spelling and pronunciation, it is called homonym (e.g.,\"bank\" as a financial institution vs. \"bank\" as the side of a river). These meanings originate from different etymology root (2) when a word has related meanings that stem from a single etymology, it is referred to as Polysemy (e.g.,\"green\" referring to the color and to something environmentally friendly). \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Lexical ambiguity from the statement.\n            Multiple segments may contain Lexical ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 1692 | Request Title - sms delivery report: show received time in message details | Request Description - when a sms delivery report is received, the time the other user received the message (afaik the done date ) should be saved and it should be possible to view it in message details. This way one could see when the other user received the message (not only that is was received). edit: if someone can give me a hint where to look/start in the code to implement this, I'd try to make a pull request (but I just glanced through the code and cannot find a starting point ... maybe it's simply too late already ;-)) \n            ####\n            Knowledge Base Summary: [Returns whether SMS delivery reports are enabled.,Returns the date the message was received.]\n            #### \n            Extracted Lexical ambiguity segment(s):\n            "
+}

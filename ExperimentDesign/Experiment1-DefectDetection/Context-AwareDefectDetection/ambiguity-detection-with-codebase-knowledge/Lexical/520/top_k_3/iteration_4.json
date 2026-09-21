@@ -1,0 +1,39 @@
+{
+    "unique_id": "b66a922a-df53-484f-9bf0-1ba08e0728d3",
+    "type": "Lexical",
+    "id": 83,
+    "feature_request_number": 520,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity",
+    "FinalDefectCount": {
+        "Ambiguity": 2,
+        "Incompleteness": 0
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 2
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 2
+    },
+    "TextUsedForAnnotation": "Request Number - 520 | Request Title - Feature: Direct Photo/Video/Audio attachments while staying in app (API calls to camera, sound recorder, video camera) instead of multistep separate apps | Request Description - I love the app... I want to replace it full time from Textra, BUT there is a big draw back, why don't you allow for direct photos, video and sounds to be taken. So you don't have to use two apps to get the file to send. Example: My wife takes a photo of something she wants my opinion on buying, (in textra or native) presses add, camera comes up, takes photo and sends Example: Same situation, but with Text Secure you have to take the photo first and save image, then goto app and add via the menu of \"where\" the documents are to attach and send So, as you can imagine carrying on a conversation and needing to send several photos during that conversation it would be a bit frustrating and very time consuming using Text Secure. Native, Textra and about all others I have used use API's and directly use the photo/audio to send.",
+    "category": "Ambiguity",
+    "label": "Lexical",
+    "subclass": "Polysemy",
+    "comment": "The highlighted term can sometimes be used as a technical term, but one or more of its original meanings also works in the given context, which creates multiple possible interpretations.",
+    "question": [
+        "When you wrote \"native\", did you mean an app designed exclusively for the device's operating system and typically downloaded via the application store, the default application included on the device out-of-the-box, another messaging app named \"native\", or something else?"
+    ],
+    "interpretation": "an app designed exclusively for the device's operating system and typically downloaded via the application store; the default application included on the device out-of-the-box, another messaging app named \"native\"",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "native)",
+    "start": 527,
+    "end": 534,
+    "missing_information": "\"attach\", \"native\"",
+    "transformed_missing_information": [
+        "attach",
+        "native"
+    ],
+    "prompt": "\n            Lexical ambiguity: Lexical ambiguity occurs when a word has multiple meanings, making its interpretation dependent on the context. It can arise in two forms: (1) when a word has unrelated meanings despite sharing the same spelling and pronunciation, it is called homonym (e.g.,\"bank\" as a financial institution vs. \"bank\" as the side of a river). These meanings originate from different etymology root (2) when a word has related meanings that stem from a single etymology, it is referred to as Polysemy (e.g.,\"green\" referring to the color and to something environmentally friendly). \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Lexical ambiguity from the statement.\n            Multiple segments may contain Lexical ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 520 | Request Title - Feature: Direct Photo/Video/Audio attachments while staying in app (API calls to camera, sound recorder, video camera) instead of multistep separate apps | Request Description - I love the app... I want to replace it full time from Textra, BUT there is a big draw back, why don't you allow for direct photos, video and sounds to be taken. So you don't have to use two apps to get the file to send. Example: My wife takes a photo of something she wants my opinion on buying, (in textra or native) presses add, camera comes up, takes photo and sends Example: Same situation, but with Text Secure you have to take the photo first and save image, then goto app and add via the menu of \"where\" the documents are to attach and send So, as you can imagine carrying on a conversation and needing to send several photos during that conversation it would be a bit frustrating and very time consuming using Text Secure. Native, Textra and about all others I have used use API's and directly use the photo/audio to send. \n            ####\n            Knowledge Base Summary: [Adds an audio attachment to the message being composed. If there is an error, the attachment is cleared and a toast is shown to the user.,Handle adding an attachment to the conversation.,Saves a thumbnail of the slide to the external storage and triggers a media scan to make it available to other apps.]\n            #### \n            Extracted Lexical ambiguity segment(s):\n            "
+}

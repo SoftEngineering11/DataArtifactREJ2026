@@ -1,0 +1,43 @@
+{
+    "unique_id": "6a0e0437-a047-4026-81a8-1abf0ce18abc",
+    "type": "Vagueness",
+    "id": 2,
+    "feature_request_number": 587,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 4,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 1,
+        "Vagueness": 2,
+        "Syntactic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 1,
+        "Vagueness-N/a": 2,
+        "Syntactic-Elliptical": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 587 | Request Title - Support an 'invite friends' feature. | Request Description - How about having a handy link (and easily found) to allow users to share your app?",
+    "category": "Ambiguity",
+    "label": "Vagueness",
+    "subclass": "N/a",
+    "comment": "The term 'easily' is vague and cannot be empirically measured.",
+    "question": [
+        "What target goals should accessing a link achieve to make it sufficiently 'easily found'?"
+    ],
+    "interpretation": "how easily is easily?",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "easily found)",
+    "start": 135,
+    "end": 148,
+    "missing_information": "\"handy\", \"easily found\"",
+    "transformed_missing_information": [
+        "handy",
+        "easily found"
+    ],
+    "prompt": "\n            Vagueness: A statement is considered vague if it admits borderline cases. A requirement is vague if it is not clear how to measure whether the requirement is fulfilled or not.\n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Vagueness from the statement.\n            Multiple segments may contain Vagueness; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 587 | Request Title - Support an 'invite friends' feature. | Request Description - How about having a handy link (and easily found) to allow users to share your app? \n            ####\n            Knowledge Base Summary: [Shares the given text by creating a chooser for the user to select an app to share with .,Shares the given text by constructing a text-only intent and passing it to the registered sharing apps.,Show a dialog prompting the user to download the app from the Play Store if it is not installed on their device.]\n            ####\n            Extracted Vagueness segment(s):\n            "
+}

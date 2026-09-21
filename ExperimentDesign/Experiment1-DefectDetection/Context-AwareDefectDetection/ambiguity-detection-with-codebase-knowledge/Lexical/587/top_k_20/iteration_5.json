@@ -1,0 +1,42 @@
+{
+    "unique_id": "6d27ab75-0a85-4312-b810-681667fac527",
+    "type": "Lexical",
+    "id": 2,
+    "feature_request_number": 587,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 4,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 1,
+        "Vagueness": 2,
+        "Syntactic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 1,
+        "Vagueness-N/a": 2,
+        "Syntactic-Elliptical": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 587 | Request Title - Support an 'invite friends' feature. | Request Description - How about having a handy link (and easily found) to allow users to share your app?",
+    "category": "Ambiguity",
+    "label": "Lexical",
+    "subclass": "Polysemy",
+    "comment": "The word 'handy' can be used to describe multiple different qualities, creating multiple possible meanings",
+    "question": [
+        "When you wrote about a 'handy' link, did you mean 'simple', 'useful', 'effective', 'easily accessible', or something else?"
+    ],
+    "interpretation": "simple; useful; effective; easily accessible",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "handy",
+    "start": 119,
+    "end": 124,
+    "missing_information": "\"No Defect Found\"",
+    "transformed_missing_information": [
+        "No Defect Found"
+    ],
+    "prompt": "\n            Lexical ambiguity: Lexical ambiguity occurs when a word has multiple meanings, making its interpretation dependent on the context. It can arise in two forms: (1) when a word has unrelated meanings despite sharing the same spelling and pronunciation, it is called homonym (e.g.,\"bank\" as a financial institution vs. \"bank\" as the side of a river). These meanings originate from different etymology root (2) when a word has related meanings that stem from a single etymology, it is referred to as Polysemy (e.g.,\"green\" referring to the color and to something environmentally friendly). \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Lexical ambiguity from the statement.\n            Multiple segments may contain Lexical ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 587 | Request Title - Support an 'invite friends' feature. | Request Description - How about having a handy link (and easily found) to allow users to share your app? \n            ####\n            Knowledge Base Summary: [Shares the given text by creating a chooser for the user to select an app to share with .,Shares the given text by constructing a text-only intent and passing it to the registered sharing apps.,Show a dialog prompting the user to download the app from the Play Store if it is not installed on their device.,Shares the given text by encoding it as a barcode such that another user can scan the text off the screen of the device. If the ZXing app is not installed, shows a dialog to prompt the user to download it.,Show an alert dialog with the specified title and message.,Set up the recent tab in the contact selection activity.,Gets the last seen version of the app from shared preferences.,Launches the Market app if available, or else browses to the Market in the browser,If we're not the default SMS app, and we haven't prompted the user yet, prompt them to change the default SMS app.,Displays an alert dialog with the given title, message, and icon.,Called when a new intent is received. This is necessary to handle the case where the user clicks the notification and we need to launch the app again.,Returns the message to display when the user has verified the other user's key.,Create a loader for the recent calls list.,Handles click events for the conversation list item. If the recipient has a contact URI, it will show the quick contact dialog. Otherwise, it will create a new contact with the recipient's number.,Gets the conversation parameters for a share action.,Handles click events for the conversation item. If the recipient has a contact URI, it will show the quick contact dialog. Otherwise, it will create a new contact with the recipient's number.,Set up the contacts tab in the activity.,Create a PendingIntent to launch the RoutingActivity when the notification is clicked by the user. The intent contains information about the recipients and thread ID if applicable. The intent also has a unique data URI to ensure a new activity is created each time.,Launches the contacts app to select an identity contact.,Creates an intent to start PromptMmsActivity with message and thread IDs passed as extras.]\n            #### \n            Extracted Lexical ambiguity segment(s):\n            "
+}

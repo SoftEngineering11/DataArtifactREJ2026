@@ -1,0 +1,40 @@
+{
+    "unique_id": "668fa12e-34de-4b36-8c19-3624913a5891",
+    "type": "Lexical",
+    "id": 27,
+    "feature_request_number": 801,
+    "feature_version": "2.0.3",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 2,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Semantic": 1,
+        "Lexical": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Semantic-Scope": 1,
+        "Lexical-Polysemy": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 801 | Request Title - Feature request: Mute Group (or any user) | Request Description - Sometimes friends in a group are discussing something I'm not interested in and my phone would go nuts vibrating and ringing all the time. A \"Mute for X minutes/hours\" feature would be awesome.",
+    "category": "Ambiguity",
+    "label": "Lexical",
+    "subclass": "Polysemy",
+    "comment": "The term 'friends' can be a technical term that categorizes other users or could be used as its literal definition, which creates multiple possible interpretations.",
+    "question": [
+        "When you mention 'friends', do you mean 'users on a friends list', personal associates, or something else?"
+    ],
+    "interpretation": "a technical term for other users on a contact list; associates",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "friends",
+    "start": 115,
+    "end": 122,
+    "missing_information": "\"No Defect Found\"",
+    "transformed_missing_information": [
+        "No Defect Found"
+    ],
+    "prompt": "\n            Lexical ambiguity: Lexical ambiguity occurs when a word has multiple meanings, making its interpretation dependent on the context. It can arise in two forms: (1) when a word has unrelated meanings despite sharing the same spelling and pronunciation, it is called homonym (e.g.,\"bank\" as a financial institution vs. \"bank\" as the side of a river). These meanings originate from different etymology root (2) when a word has related meanings that stem from a single etymology, it is referred to as Polysemy (e.g.,\"green\" referring to the color and to something environmentally friendly). \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Lexical ambiguity from the statement.\n            Multiple segments may contain Lexical ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 801 | Request Title - Feature request: Mute Group (or any user) | Request Description - Sometimes friends in a group are discussing something I'm not interested in and my phone would go nuts vibrating and ringing all the time. A \"Mute for X minutes/hours\" feature would be awesome. \n            ####\n            Knowledge Base Summary: [Returns whether or not the notification vibrate preference is enabled.,Returns the notification ringtone preference value from the given context.]\n            #### \n            Extracted Lexical ambiguity segment(s):\n            "
+}

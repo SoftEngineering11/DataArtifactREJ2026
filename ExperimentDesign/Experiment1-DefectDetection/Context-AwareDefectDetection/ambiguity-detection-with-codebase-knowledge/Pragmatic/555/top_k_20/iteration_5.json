@@ -1,0 +1,42 @@
+{
+    "unique_id": "f7926d58-a233-452f-9f36-743adecb64a1",
+    "type": "Pragmatic",
+    "id": 44,
+    "feature_request_number": 555,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity",
+    "FinalDefectCount": {
+        "Ambiguity": 5,
+        "Incompleteness": 0
+    },
+    "FinalAmbiguityClassType": {
+        "Syntactic": 2,
+        "Pragmatic": 2,
+        "Semantic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Syntactic-Elliptical": 2,
+        "Pragmatic-Referential": 2,
+        "Semantic-Scope": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 555 | Request Title - Not working in dual sim phone | Request Description - My friend has a dual sim Lava iris 405 and i have samsung galaxy s3. we both have installed the TextSecure when i start secure session, it sends Key exchange message and its received in my friends. After that it says Received and processed key exchange message but he is unable to send me any message, it says error sending. i know its giving problem because its a dual sim phone, text secure app is not able to send sms from particular sim and giving this error. Is dual sim phone supported by textSecure?",
+    "category": "Ambiguity",
+    "label": "Pragmatic",
+    "subclass": "Referential",
+    "comment": "\"It\" is referring to multiple tokens from the previous sentence. ",
+    "question": [
+        "What is \"it\" referring to in the following sentence: \"After that it says Received\"?"
+    ],
+    "interpretation": "Message; app; phone",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "After that it says Received",
+    "start": 291,
+    "end": 318,
+    "missing_information": "\"No Defect Found\"",
+    "transformed_missing_information": [
+        "No Defect Found"
+    ],
+    "prompt": "\n            Pragmatic ambiguity: Pragmatic ambiguity occurs when a sentence has several meanings in the context in which it is uttered. The context comprises the language context, i.e., the sentences uttered before and after, and the context beyond language, i.e., the situation, the background knowledge, and expectations of the speaker or hearer and the writer or reader.\n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Pragmatic ambiguity from the statement.\n            Multiple segments may contain Pragmatic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 555 | Request Title - Not working in dual sim phone | Request Description - My friend has a dual sim Lava iris 405 and i have samsung galaxy s3. we both have installed the TextSecure when i start secure session, it sends Key exchange message and its received in my friends. After that it says Received and processed key exchange message but he is unable to send me any message, it says error sending. i know its giving problem because its a dual sim phone, text secure app is not able to send sms from particular sim and giving this error. Is dual sim phone supported by textSecure? \n            #### \n            Knowledge Base Summary: [Send an MMS message to the specified recipients, optionally using a secure session.,Checks if the given SMS message is exempt from being processed by the app.,Delivers a secure message by dividing it into parts and sending them using SmsManager. If there is an error, it is caught and the message is marked as undeliverable.,Handle incoming intent for responding via message. Currently not supported by TextSecure.,Delivers an SMS message, either securely or as plaintext.,Checks if the received SMS is a verification code challenge and if the app is in the verifying state.,Sends an SMS text message to the specified recipient with the given message, using the default SMS manager. Includes pending intents for delivery and sending status.,Checks if the necessary APN details are present for sending MMS messages.,Checks if the necessary APN details are available for sending MMS messages.,Delivers an SMS message using GCM transport.,Returns the database for storing encrypted SMS messages.,Checks if the message is a secure message.,Sends a text message using either GCM or SMS, depending on whether the destination number is in the filter.,Checks if the received SMS is relevant for the app.,Send a message to the specified recipient using GCM.,Checks if the incoming message is a secure message.,Sends a multipart text message.,Handles the action of dialing a recipient's phone number. If the device does not support dial actions, an alert dialog is shown.,Checks if the app is set as the default SMS provider on the device.,This method is called when a SMS is sent or delivered. It starts the SendReceiveService to handle the result of the SMS sending or delivery.]\n            #### \n            Extracted Pragmatic ambiguity segment(s):\n            "
+}

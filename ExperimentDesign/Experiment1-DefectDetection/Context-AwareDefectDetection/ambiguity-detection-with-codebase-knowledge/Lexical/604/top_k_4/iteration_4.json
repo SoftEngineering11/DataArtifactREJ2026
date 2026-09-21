@@ -1,0 +1,40 @@
+{
+    "unique_id": "a55a4369-7621-420c-93e3-a771e16e2180",
+    "type": "Lexical",
+    "id": 26,
+    "feature_request_number": 604,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity",
+    "FinalDefectCount": {
+        "Ambiguity": 5,
+        "Incompleteness": 0
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 4,
+        "Semantic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 4,
+        "Semantic-Referential": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 604 | Request Title - Number registration (for push messaging) doesn't work with Google Voice | Request Description - The new push based TextSecure doesn't seem to like using Google Voice numbers (which are then forwarded to my phone's real number via SMS).  Although there are of course privacy downsides associated with letting Google see all of your incoming/outgoing SMS data, there are also serious privacy harms associated with letting people know your actual phone number, rather than a number that will just forward texts to you* The first step of the TextSecure number registration process (\"Connecting\") works fine. An incoming text message with the verification code is received by the default Android SMS app, but TextSecure doesn't catch it. Thankfully, after 2 minutes of waiting, I am given the opportunity verify by voice, which does work.",
+    "category": "Ambiguity",
+    "label": "Lexical",
+    "subclass": "Polysemy",
+    "comment": "The word 'push' can be a technical term with a different meaning than its literal definition, creating multiple possible interpretations.",
+    "question": [
+        "When you discuss 'push messaging', is 'push' being used as a technical term or the literal word push?"
+    ],
+    "interpretation": "technical term for server-based notification; persuade; force",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "push",
+    "start": 64,
+    "end": 68,
+    "missing_information": "\"number\"",
+    "transformed_missing_information": [
+        "number"
+    ],
+    "prompt": "\n            Lexical ambiguity: Lexical ambiguity occurs when a word has multiple meanings, making its interpretation dependent on the context. It can arise in two forms: (1) when a word has unrelated meanings despite sharing the same spelling and pronunciation, it is called homonym (e.g.,\"bank\" as a financial institution vs. \"bank\" as the side of a river). These meanings originate from different etymology root (2) when a word has related meanings that stem from a single etymology, it is referred to as Polysemy (e.g.,\"green\" referring to the color and to something environmentally friendly). \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Lexical ambiguity from the statement.\n            Multiple segments may contain Lexical ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 604 | Request Title - Number registration (for push messaging) doesn't work with Google Voice | Request Description - The new push based TextSecure doesn't seem to like using Google Voice numbers (which are then forwarded to my phone's real number via SMS).  Although there are of course privacy downsides associated with letting Google see all of your incoming/outgoing SMS data, there are also serious privacy harms associated with letting people know your actual phone number, rather than a number that will just forward texts to you* The first step of the TextSecure number registration process (\"Connecting\") works fine. An incoming text message with the verification code is received by the default Android SMS app, but TextSecure doesn't catch it. Thankfully, after 2 minutes of waiting, I am given the opportunity verify by voice, which does work. \n            ####\n            Knowledge Base Summary: [Returns the title to be used when the user has not yet verified the safety number.,Sends a text message using either GCM or SMS, depending on whether the destination number is in the filter.,Checks if the received SMS is a verification code challenge and if the app is in the verifying state.,Delivers an SMS message, either securely or as plaintext.]\n            #### \n            Extracted Lexical ambiguity segment(s):\n            "
+}

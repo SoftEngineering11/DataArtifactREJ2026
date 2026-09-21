@@ -1,0 +1,38 @@
+{
+    "unique_id": "d8e60c4b-1fc4-4a5a-958a-e44941fee772",
+    "type": "Lexical",
+    "id": 75,
+    "feature_request_number": 496,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 1,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 496 | Request Title - Feature Request: Ability to change maximum size of MMS | Request Description - I have seen this feature on other third party messaging apps it'd be great.  Thanks!",
+    "category": "Ambiguity",
+    "label": "Lexical",
+    "subclass": "Polysemy",
+    "comment": "The term MMS is an acronym that can have multiple meanings, and one of its likely meanings can be commonly misused to indicate a subcategory of its literal meaning (in this case an attachment as opposed to the entire message), which creates multiple possible interpretations",
+    "question": [
+        "When you wrote \"MMS\", did you mean messages using the Multimedia Messaging Service protocol, file attachments to messages, or something else?"
+    ],
+    "interpretation": "messages using the Multimedia Messaging Service protocol; file attachments to messages",
+    "affectsDownstream": "Yes",
+    "affectDescription": "API usage",
+    "text": "MMS",
+    "start": 90,
+    "end": 93,
+    "missing_information": "\"No Defect Found\"",
+    "transformed_missing_information": [
+        "No Defect Found"
+    ],
+    "prompt": "\n            Lexical ambiguity: Lexical ambiguity occurs when a word has multiple meanings, making its interpretation dependent on the context. It can arise in two forms: (1) when a word has unrelated meanings despite sharing the same spelling and pronunciation, it is called homonym (e.g.,\"bank\" as a financial institution vs. \"bank\" as the side of a river). These meanings originate from different etymology root (2) when a word has related meanings that stem from a single etymology, it is referred to as Polysemy (e.g.,\"green\" referring to the color and to something environmentally friendly). \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Lexical ambiguity from the statement.\n            Multiple segments may contain Lexical ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 496 | Request Title - Feature Request: Ability to change maximum size of MMS | Request Description - I have seen this feature on other third party messaging apps it'd be great.  Thanks! \n            ####\n            Knowledge Base Summary: [Sets the attributes of a media MMS message.,Sends MMS messages from the outbox.,Sends an MMS message with a radio change.]\n            #### \n            Extracted Lexical ambiguity segment(s):\n            "
+}

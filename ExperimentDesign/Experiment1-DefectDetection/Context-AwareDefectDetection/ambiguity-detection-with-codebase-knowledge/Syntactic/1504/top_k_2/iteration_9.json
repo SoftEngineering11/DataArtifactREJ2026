@@ -1,0 +1,44 @@
+{
+    "unique_id": "ebeeb21f-643e-43a0-a355-ac94c6ceb858",
+    "type": "Syntactic",
+    "id": 68,
+    "feature_request_number": 1504,
+    "feature_version": "2.0.8",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 5,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Pragmatic": 3,
+        "Semantic": 1,
+        "Syntactic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Pragmatic-Referential": 3,
+        "Semantic-Scope": 1,
+        "Syntactic-Coordination": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 1504 | Request Title - Notification Color for Individual Contacts or Groups | Request Description - how about we edit this one too?  or just delete it..... \uf8ff\u00fc\u00f4\u00e0",
+    "category": "Ambiguity",
+    "label": "Syntactic",
+    "subclass": "Coordination",
+    "comment": "A conjunction \"or\" is used with a modifier \"individual,\" which triggers syntactic coordination ambiguity. As a result, the phrase \"individual contacts or groups\" can be parsed and grouped differently: ((individual contacts) or groups); (individual (contacts or groups)).",
+    "question": [
+        "Do you need this feature just for an individual group or groups?",
+        " Do you need this feature for an individual contact or a group of contacts?"
+    ],
+    "interpretation": "Individual contact; individual contacts; individual groups; individual groups; only individual contacts, and all groups together;",
+    "affectsDownstream": "Yes",
+    "affectDescription": "Requirements analysis, design, implemention, and testing",
+    "text": "Individual Contacts or Groups",
+    "start": 63,
+    "end": 92,
+    "missing_information": "\"Notification Color for Individual Contacts or Groups\", \"how about we edit this one too? or just delete it\"",
+    "transformed_missing_information": [
+        "Notification Color for Individual Contacts or Groups",
+        "how about we edit this one too? or just delete it"
+    ],
+    "prompt": "\n            Syntactic ambiguity: Syntactic ambiguity occurs when a given sequence of words can be given more than one grammatical structure, and each has a different meaning. In the terminology of compiler construction, syntactic ambiguity occurs when a sentence has more than one parse. \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Syntactic ambiguity from the statement.\n            Multiple segments may contain Syntactic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 1504 | Request Title - Notification Color for Individual Contacts or Groups | Request Description - how about we edit this one too?  or just delete it..... \uf8ff\u00fc\u00f4\u00e0 \n            #### \n            Knowledge Base Summary: [Called when a group update is received. Looks up new recipients and updates the title bar.,Sets the subject of the notification.]\n            #### \n            Extracted Syntactic ambiguity segment(s):\n            "
+}

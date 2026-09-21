@@ -1,0 +1,40 @@
+{
+    "unique_id": "5d2a98ef-e590-4ba3-99cc-2f4584939d45",
+    "type": "Semantic",
+    "id": 26,
+    "feature_request_number": 604,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity",
+    "FinalDefectCount": {
+        "Ambiguity": 5,
+        "Incompleteness": 0
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 4,
+        "Semantic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 4,
+        "Semantic-Referential": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 604 | Request Title - Number registration (for push messaging) doesn't work with Google Voice | Request Description - The new push based TextSecure doesn't seem to like using Google Voice numbers (which are then forwarded to my phone's real number via SMS).  Although there are of course privacy downsides associated with letting Google see all of your incoming/outgoing SMS data, there are also serious privacy harms associated with letting people know your actual phone number, rather than a number that will just forward texts to you* The first step of the TextSecure number registration process (\"Connecting\") works fine. An incoming text message with the verification code is received by the default Android SMS app, but TextSecure doesn't catch it. Thankfully, after 2 minutes of waiting, I am given the opportunity verify by voice, which does work.",
+    "category": "Ambiguity",
+    "label": "Semantic",
+    "subclass": "Referential",
+    "comment": "The pronoun 'it' can refer to two different targets in the sentence, changing the nature of the problem based on the interpretation.",
+    "question": [
+        "When you wrote \"TextSecure doesn't catch it\", do you mean \"TextSecure doesn't catch the message\", \"TextSecure doesn't catch the verification code\", or something else?"
+    ],
+    "interpretation": "text message; verification code",
+    "affectsDownstream": "Yes",
+    "affectDescription": "Determines if the issue is observing the event or parsing the event",
+    "text": "it.",
+    "start": 768,
+    "end": 771,
+    "missing_information": "\"No Defect Found.\"",
+    "transformed_missing_information": [
+        "No Defect Found."
+    ],
+    "prompt": "\n            Semantic ambiguity: Semantic ambiguity occurs when a sentence has more than one way of reading it within its context, although it contains no lexical or syntactic ambiguity. Semantic ambiguity can be viewed as ambiguity with respect to the logical form, usually expressed in predicate logic, of a sentence.\n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Semantic ambiguity from the statement.\n            Multiple segments may contain Semantic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 604 | Request Title - Number registration (for push messaging) doesn't work with Google Voice | Request Description - The new push based TextSecure doesn't seem to like using Google Voice numbers (which are then forwarded to my phone's real number via SMS).  Although there are of course privacy downsides associated with letting Google see all of your incoming/outgoing SMS data, there are also serious privacy harms associated with letting people know your actual phone number, rather than a number that will just forward texts to you* The first step of the TextSecure number registration process (\"Connecting\") works fine. An incoming text message with the verification code is received by the default Android SMS app, but TextSecure doesn't catch it. Thankfully, after 2 minutes of waiting, I am given the opportunity verify by voice, which does work. \n            #### \n            Knowledge Base Summary: [Returns the title to be used when the user has not yet verified the safety number.,Sends a text message using either GCM or SMS, depending on whether the destination number is in the filter.,Checks if the received SMS is a verification code challenge and if the app is in the verifying state.,Delivers an SMS message, either securely or as plaintext.,Delivers an SMS message using GCM transport.,Sends a GCM text message to the specified recipient using the provided context, message text, and pending intents for sent and delivered messages. Falls back to SMS if no credentials are available.,Checks if the intent contains a \"e164number\" extra, indicating that the user is registering with a specific phone number.,Handle incoming intent for responding via message. Currently not supported by TextSecure.,Registers a GCM registration ID for the local number.,Send a message to the specified recipient using GCM.]\n            #### \n            Extracted Semantic ambiguity segment(s):\n            "
+}

@@ -1,0 +1,42 @@
+{
+    "unique_id": "5b9498a5-3d60-4821-b077-dd2b23a0e317",
+    "type": "Semantic",
+    "id": 44,
+    "feature_request_number": 555,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity",
+    "FinalDefectCount": {
+        "Ambiguity": 5,
+        "Incompleteness": 0
+    },
+    "FinalAmbiguityClassType": {
+        "Syntactic": 2,
+        "Pragmatic": 2,
+        "Semantic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Syntactic-Elliptical": 2,
+        "Pragmatic-Referential": 2,
+        "Semantic-Scope": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 555 | Request Title - Not working in dual sim phone | Request Description - My friend has a dual sim Lava iris 405 and i have samsung galaxy s3. we both have installed the TextSecure when i start secure session, it sends Key exchange message and its received in my friends. After that it says Received and processed key exchange message but he is unable to send me any message, it says error sending. i know its giving problem because its a dual sim phone, text secure app is not able to send sms from particular sim and giving this error. Is dual sim phone supported by textSecure?",
+    "category": "Ambiguity",
+    "label": "Semantic",
+    "subclass": "Scope",
+    "comment": "It is unclear whether the indefinite noun phrase \"particular sim\" is intended to be specific or non-specific, creating multiple possible interpretations.",
+    "question": [
+        "When you say the app is not able to send from a particular SIM, do you mean it cannot send from a specific SIM, it cannot send from either SIM interchangeably, or something else?"
+    ],
+    "interpretation": "a specific SIM; either SIM interchangeably",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "particular sim",
+    "start": 519,
+    "end": 533,
+    "missing_information": "\"No Defect Found\"",
+    "transformed_missing_information": [
+        "No Defect Found"
+    ],
+    "prompt": "\n            Semantic ambiguity: Semantic ambiguity occurs when a sentence has more than one way of reading it within its context, although it contains no lexical or syntactic ambiguity. Semantic ambiguity can be viewed as ambiguity with respect to the logical form, usually expressed in predicate logic, of a sentence.\n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Semantic ambiguity from the statement.\n            Multiple segments may contain Semantic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 555 | Request Title - Not working in dual sim phone | Request Description - My friend has a dual sim Lava iris 405 and i have samsung galaxy s3. we both have installed the TextSecure when i start secure session, it sends Key exchange message and its received in my friends. After that it says Received and processed key exchange message but he is unable to send me any message, it says error sending. i know its giving problem because its a dual sim phone, text secure app is not able to send sms from particular sim and giving this error. Is dual sim phone supported by textSecure? \n            #### \n            Knowledge Base Summary: [Send an MMS message to the specified recipients, optionally using a secure session.,Checks if the given SMS message is exempt from being processed by the app.,Delivers a secure message by dividing it into parts and sending them using SmsManager. If there is an error, it is caught and the message is marked as undeliverable.,Handle incoming intent for responding via message. Currently not supported by TextSecure.,Delivers an SMS message, either securely or as plaintext.,Checks if the received SMS is a verification code challenge and if the app is in the verifying state.,Sends an SMS text message to the specified recipient with the given message, using the default SMS manager. Includes pending intents for delivery and sending status.,Checks if the necessary APN details are present for sending MMS messages.,Checks if the necessary APN details are available for sending MMS messages.,Delivers an SMS message using GCM transport.]\n            #### \n            Extracted Semantic ambiguity segment(s):\n            "
+}

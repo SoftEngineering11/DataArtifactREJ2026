@@ -1,0 +1,43 @@
+{
+    "unique_id": "d6f48486-fd08-4068-82dd-acc0f4f262ae",
+    "type": "Pragmatic",
+    "id": 68,
+    "feature_request_number": 1504,
+    "feature_version": "2.0.8",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 5,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Pragmatic": 3,
+        "Semantic": 1,
+        "Syntactic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Pragmatic-Referential": 3,
+        "Semantic-Scope": 1,
+        "Syntactic-Coordination": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 1504 | Request Title - Notification Color for Individual Contacts or Groups | Request Description - how about we edit this one too?  or just delete it..... \uf8ff\u00fc\u00f4\u00e0",
+    "category": "Ambiguity",
+    "label": "Pragmatic",
+    "subclass": "Referential",
+    "comment": "There is not enough information presented to determine what concept the highlighted text is referring to, which creates multiple potential interpretations.",
+    "question": [
+        "When you wrote \"this one\", were you referring to the notification color, a different feature request about notification colors, or something else?"
+    ],
+    "interpretation": "the notification color; the request",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "this one",
+    "start": 135,
+    "end": 143,
+    "missing_information": "\"how about we edit this one too?\", \"or just delete it..... \uf8ff\u00fc\u00f4\u00e0\"",
+    "transformed_missing_information": [
+        "how about we edit this one too?",
+        "or just delete it..... \uf8ff\u00fc\u00f4\u00e0"
+    ],
+    "prompt": "\n            Pragmatic ambiguity: Pragmatic ambiguity occurs when a sentence has several meanings in the context in which it is uttered. The context comprises the language context, i.e., the sentences uttered before and after, and the context beyond language, i.e., the situation, the background knowledge, and expectations of the speaker or hearer and the writer or reader.\n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Pragmatic ambiguity from the statement.\n            Multiple segments may contain Pragmatic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 1504 | Request Title - Notification Color for Individual Contacts or Groups | Request Description - how about we edit this one too?  or just delete it..... \uf8ff\u00fc\u00f4\u00e0 \n            #### \n            Knowledge Base Summary: [Called when a group update is received. Looks up new recipients and updates the title bar.,Sets the subject of the notification.,Updates the identity name text view when the recipient is modified.,Sets the text for the \"from\" view and sets the contact photo for the primary recipient.,Sets the text for the \"from\" view and sets the contact photo for the primary recipient.]\n            #### \n            Extracted Pragmatic ambiguity segment(s):\n            "
+}

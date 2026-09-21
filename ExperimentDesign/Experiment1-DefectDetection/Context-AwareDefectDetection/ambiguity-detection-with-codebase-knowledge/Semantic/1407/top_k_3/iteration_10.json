@@ -1,0 +1,38 @@
+{
+    "unique_id": "91d55c2d-3020-4fb4-af82-549e00ab6ac8",
+    "type": "Semantic",
+    "id": 93,
+    "feature_request_number": 1407,
+    "feature_version": "2.0.8",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 1,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Semantic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Semantic-Referential": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 1407 | Request Title - textsecure not an option when \"sharing\" an address book contact | Request Description - TextSecure is not an option when attempting to share a contact from the address book, in Android 4.4.2 when i select \"messaging\" it tells me \"messaging\" is not the default sms app. This would be a nice feature to have added to the app.",
+    "category": "Ambiguity",
+    "label": "Semantic",
+    "subclass": "Referential",
+    "comment": "The pronoun \"it\" can point to multiple possible targets in the sentence, creating multiple interpretations.",
+    "question": [
+        "When you wrote \"it tells me\", does \"it\" refer to TextSecure, the Android OS, or something else?"
+    ],
+    "interpretation": "TextSecure; the Android OS",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "it",
+    "start": 257,
+    "end": 259,
+    "missing_information": "\"No Defect Found\"",
+    "transformed_missing_information": [
+        "No Defect Found"
+    ],
+    "prompt": "\n            Semantic ambiguity: Semantic ambiguity occurs when a sentence has more than one way of reading it within its context, although it contains no lexical or syntactic ambiguity. Semantic ambiguity can be viewed as ambiguity with respect to the logical form, usually expressed in predicate logic, of a sentence.\n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Semantic ambiguity from the statement.\n            Multiple segments may contain Semantic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 1407 | Request Title - textsecure not an option when \"sharing\" an address book contact | Request Description - TextSecure is not an option when attempting to share a contact from the address book, in Android 4.4.2 when i select \"messaging\" it tells me \"messaging\" is not the default sms app. This would be a nice feature to have added to the app. \n            #### \n            Knowledge Base Summary: [Shares the given text by prompting the user with a dialog . Call this from your Activity 's onClickListener() . Note that the user will be prompted to choose which application to share with . By default , all applications that can handle text will be shown in the list . You can filter this list by calling the overload below .,Share the given text via the default Android share mechanism.,If we're not the default SMS app, prompt the user to change it.]\n            #### \n            Extracted Semantic ambiguity segment(s):\n            "
+}

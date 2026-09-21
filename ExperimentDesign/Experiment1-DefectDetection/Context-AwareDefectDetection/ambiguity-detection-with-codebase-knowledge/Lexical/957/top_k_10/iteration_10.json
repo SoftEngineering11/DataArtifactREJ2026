@@ -1,0 +1,38 @@
+{
+    "unique_id": "30856934-f138-4e2b-bed2-a74c12af7588",
+    "type": "Lexical",
+    "id": 56,
+    "feature_request_number": 957,
+    "feature_version": "2.0.3",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 3,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 3
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 3
+    },
+    "TextUsedForAnnotation": "Request Number - 957 | Request Title - Delivery reports for PUSHed messages? | Request Description - SMS messages support the notion of a delivery report that allows me to see when a message was actually delivered to the recipient. I miss that feature for PUSHed messages, though. It seems there is no way to request a delivery report?",
+    "category": "Ambiguity",
+    "label": "Lexical",
+    "subclass": "Polysemy",
+    "comment": "\"Pushed Messages\" can have multiple interpretations and seems to be a technical term in Signal. ",
+    "question": [
+        "What do you mean by \"push messages\"?"
+    ],
+    "interpretation": "Received Signal messages; Sent Signal Messages; Notification on the status of a sent Signal message",
+    "affectsDownstream": "Yes",
+    "affectDescription": "This will affect the design, implementation, and testing of the app. ",
+    "text": "PUSHed messages?",
+    "start": 60,
+    "end": 76,
+    "missing_information": "\"No Defect Found\"",
+    "transformed_missing_information": [
+        "No Defect Found"
+    ],
+    "prompt": "\n            Lexical ambiguity: Lexical ambiguity occurs when a word has multiple meanings, making its interpretation dependent on the context. It can arise in two forms: (1) when a word has unrelated meanings despite sharing the same spelling and pronunciation, it is called homonym (e.g.,\"bank\" as a financial institution vs. \"bank\" as the side of a river). These meanings originate from different etymology root (2) when a word has related meanings that stem from a single etymology, it is referred to as Polysemy (e.g.,\"green\" referring to the color and to something environmentally friendly). \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Lexical ambiguity from the statement.\n            Multiple segments may contain Lexical ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 957 | Request Title - Delivery reports for PUSHed messages? | Request Description - SMS messages support the notion of a delivery report that allows me to see when a message was actually delivered to the recipient. I miss that feature for PUSHed messages, though. It seems there is no way to request a delivery report? \n            ####\n            Knowledge Base Summary: [Returns whether SMS delivery reports are enabled.,Sets the delivery report flag for this message.,Returns the delivery report flag value from the PDU headers.,Returns the delivery report flag value from the PDU headers.,Returns the delivery report flag value from the PDU headers.,Sets the delivery report value for this notification indication.,Sets the delivery report value for this PDU.,Returns the value of the REPORT_ALLOWED field, which indicates whether the sender of the message is allowed to send a delivery report for this message.,Returns the retrieve status of the message.,Gets the status value for this DeliveryInd.]\n            #### \n            Extracted Lexical ambiguity segment(s):\n            "
+}

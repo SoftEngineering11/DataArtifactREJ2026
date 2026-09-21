@@ -1,0 +1,40 @@
+{
+    "unique_id": "38483b53-1801-4e2c-b786-a4c574f14755",
+    "type": "Syntactic",
+    "id": 2,
+    "feature_request_number": 587,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 4,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Lexical": 1,
+        "Vagueness": 2,
+        "Syntactic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Lexical-Polysemy": 1,
+        "Vagueness-N/a": 2,
+        "Syntactic-Elliptical": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 587 | Request Title - Support an 'invite friends' feature. | Request Description - How about having a handy link (and easily found) to allow users to share your app?",
+    "category": "Ambiguity",
+    "label": "Syntactic",
+    "subclass": "Elliptical",
+    "comment": "A word may have been omitted for brevity that could change the interpretation of the sentence, creating multiple possible meanings.",
+    "question": [
+        "When you wrote \"share your app\", did you mean \"share (usage of) your app\", \"share (awareness of) your app\", or something else?"
+    ],
+    "interpretation": "share (usage of) your app; share (awareness of) your app",
+    "affectsDownstream": "Yes",
+    "affectDescription": "Different meanings could create significantly different feature expectations and therefore implementations",
+    "text": "share your app?",
+    "start": 167,
+    "end": 182,
+    "missing_information": "No Defect Found.",
+    "transformed_missing_information": [],
+    "prompt": "\n            Syntactic ambiguity: Syntactic ambiguity occurs when a given sequence of words can be given more than one grammatical structure, and each has a different meaning. In the terminology of compiler construction, syntactic ambiguity occurs when a sentence has more than one parse. \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Syntactic ambiguity from the statement.\n            Multiple segments may contain Syntactic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 587 | Request Title - Support an 'invite friends' feature. | Request Description - How about having a handy link (and easily found) to allow users to share your app? \n            #### \n            Knowledge Base Summary: [Shares the given text by creating a chooser for the user to select an app to share with .,Shares the given text by constructing a text-only intent and passing it to the registered sharing apps.,Show a dialog prompting the user to download the app from the Play Store if it is not installed on their device.,Shares the given text by encoding it as a barcode such that another user can scan the text off the screen of the device. If the ZXing app is not installed, shows a dialog to prompt the user to download it.]\n            #### \n            Extracted Syntactic ambiguity segment(s):\n            "
+}

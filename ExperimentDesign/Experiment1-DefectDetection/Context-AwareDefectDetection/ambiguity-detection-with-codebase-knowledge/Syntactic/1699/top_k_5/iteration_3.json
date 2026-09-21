@@ -1,0 +1,39 @@
+{
+    "unique_id": "277c4334-160e-41e7-8e7a-fbd94da99cfd",
+    "type": "Syntactic",
+    "id": 57,
+    "feature_request_number": 1699,
+    "feature_version": "2.0.8",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 1,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Syntactic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Syntactic-Coordination": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 1699 | Request Title - Add Android Wear support | Request Description - Hangouts has the possibility to answer with predefined answers or voice. Something similar would be awesome for TextSecure. Since all this works over notifications, this should be reasonably easy to intergrate.",
+    "category": "Ambiguity",
+    "label": "Syntactic",
+    "subclass": "Coordination",
+    "comment": "A conjunction is used with a modifier. ",
+    "question": [
+        "Should the voice also be predefined?",
+        " What is the difference between a predefined voice and a predefined message?"
+    ],
+    "interpretation": "voice; predefined voice",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "predefined answers or voice.",
+    "start": 133,
+    "end": 161,
+    "missing_information": "\"No Defect Found\"",
+    "transformed_missing_information": [
+        "No Defect Found"
+    ],
+    "prompt": "\n            Syntactic ambiguity: Syntactic ambiguity occurs when a given sequence of words can be given more than one grammatical structure, and each has a different meaning. In the terminology of compiler construction, syntactic ambiguity occurs when a sentence has more than one parse. \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Syntactic ambiguity from the statement.\n            Multiple segments may contain Syntactic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 1699 | Request Title - Add Android Wear support | Request Description - Hangouts has the possibility to answer with predefined answers or voice. Something similar would be awesome for TextSecure. Since all this works over notifications, this should be reasonably easy to intergrate. \n            #### \n            Knowledge Base Summary: [Handle incoming intent for responding via message. Currently not supported by TextSecure.,Share the given text via the default Android share mechanism.,Deliver a group message via push .,Shares the given text by prompting the user with a dialog . Call this from your Activity 's onClickListener() . Note that the user will be prompted to choose which application to share with . By default , all applications that can handle text will be shown in the list . You can filter this list by calling the overload below .,Show a progress dialog while waiting for the incoming call to be answered.]\n            #### \n            Extracted Syntactic ambiguity segment(s):\n            "
+}

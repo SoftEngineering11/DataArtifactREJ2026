@@ -1,0 +1,42 @@
+{
+    "unique_id": "a6e9f199-ac05-461c-834c-8a6969fe3726",
+    "type": "Syntactic",
+    "id": 44,
+    "feature_request_number": 555,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity",
+    "FinalDefectCount": {
+        "Ambiguity": 5,
+        "Incompleteness": 0
+    },
+    "FinalAmbiguityClassType": {
+        "Syntactic": 2,
+        "Pragmatic": 2,
+        "Semantic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Syntactic-Elliptical": 2,
+        "Pragmatic-Referential": 2,
+        "Semantic-Scope": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 555 | Request Title - Not working in dual sim phone | Request Description - My friend has a dual sim Lava iris 405 and i have samsung galaxy s3. we both have installed the TextSecure when i start secure session, it sends Key exchange message and its received in my friends. After that it says Received and processed key exchange message but he is unable to send me any message, it says error sending. i know its giving problem because its a dual sim phone, text secure app is not able to send sms from particular sim and giving this error. Is dual sim phone supported by textSecure?",
+    "category": "Ambiguity",
+    "label": "Syntactic",
+    "subclass": "Elliptical",
+    "comment": "The sentence is incomplete and is missing a word at the end. ",
+    "question": [
+        "NA"
+    ],
+    "interpretation": "phone; hand; TextSecure",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "friends.",
+    "start": 282,
+    "end": 290,
+    "missing_information": "\"No Defect Found\"",
+    "transformed_missing_information": [
+        "No Defect Found"
+    ],
+    "prompt": "\n            Syntactic ambiguity: Syntactic ambiguity occurs when a given sequence of words can be given more than one grammatical structure, and each has a different meaning. In the terminology of compiler construction, syntactic ambiguity occurs when a sentence has more than one parse. \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Syntactic ambiguity from the statement.\n            Multiple segments may contain Syntactic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 555 | Request Title - Not working in dual sim phone | Request Description - My friend has a dual sim Lava iris 405 and i have samsung galaxy s3. we both have installed the TextSecure when i start secure session, it sends Key exchange message and its received in my friends. After that it says Received and processed key exchange message but he is unable to send me any message, it says error sending. i know its giving problem because its a dual sim phone, text secure app is not able to send sms from particular sim and giving this error. Is dual sim phone supported by textSecure? \n            #### \n            Knowledge Base Summary: [Send an MMS message to the specified recipients, optionally using a secure session.,Checks if the given SMS message is exempt from being processed by the app.,Delivers a secure message by dividing it into parts and sending them using SmsManager. If there is an error, it is caught and the message is marked as undeliverable.,Handle incoming intent for responding via message. Currently not supported by TextSecure.,Delivers an SMS message, either securely or as plaintext.]\n            #### \n            Extracted Syntactic ambiguity segment(s):\n            "
+}

@@ -1,0 +1,42 @@
+{
+    "unique_id": "3f71f966-ecf8-4fb4-9821-dd9c601416b2",
+    "type": "Syntactic",
+    "id": 69,
+    "feature_request_number": 802,
+    "feature_version": "2.0.3",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 4,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Syntactic": 2,
+        "Lexical": 1,
+        "Vagueness": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Syntactic-Coordination": 2,
+        "Lexical-Polysemy": 1,
+        "Vagueness-N/a": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 802 | Request Title - Feature Request: import and export keys to file, Bluetooth, QR, and NFC | Request Description - more specificly I'd like to be able to import and export the private key, and public keys to files. I'd also like to be able to import and export public keys via bluetooth, NFC, and QR code. Something like this: https://play.google.com/store/apps/details?id=org.sufficientlysecure.keychain The do key management pretty well, for GPG. (sadly no one writes apps that use their wonderful app, but seriously, best key management app there is.) its also open source, I wonder if you could steal some code from them, and use their key management interface. Reasons I need this new phone, I need to securely wipe the old key, export the old key to a file, and then re-import it. Lost phone, in case I loose my phone, I can reuse the same gpg key. Device immaterial - once I have a back up file of the private key, I can store that on an encrypted parition, or container, and bounce that around as I see fit between devices, PCs, internet storage, etc.. I can then bring it back when I need it. I can also switch between phones at will. For public keys. in addition to reasons 1-3, having a good back up of my friend's public keys, I can easily re-import them, and share them with other people as needed, to make the fewest amounts of key exchanges needed. I can set up phones for people with all the public keys they need. just load them up, and go. This would just make an already good app fucking awesome.",
+    "category": "Ambiguity",
+    "label": "Syntactic",
+    "subclass": "Coordination",
+    "comment": "More than one conjunction (\"and\") is used in the sentence. ",
+    "question": [
+        "How do you want to export keys to files? How do you want to import keys from files?"
+    ],
+    "interpretation": "import private key to files; import private key; export private key to files; export public key to files",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "import and export the private key, and public keys to files.",
+    "start": 174,
+    "end": 234,
+    "missing_information": "\"No Defect Found\"",
+    "transformed_missing_information": [
+        "No Defect Found"
+    ],
+    "prompt": "\n            Syntactic ambiguity: Syntactic ambiguity occurs when a given sequence of words can be given more than one grammatical structure, and each has a different meaning. In the terminology of compiler construction, syntactic ambiguity occurs when a sentence has more than one parse. \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Syntactic ambiguity from the statement.\n            Multiple segments may contain Syntactic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 802 | Request Title - Feature Request: import and export keys to file, Bluetooth, QR, and NFC | Request Description - more specificly I'd like to be able to import and export the private key, and public keys to files. I'd also like to be able to import and export public keys via bluetooth, NFC, and QR code. Something like this: https://play.google.com/store/apps/details?id=org.sufficientlysecure.keychain The do key management pretty well, for GPG. (sadly no one writes apps that use their wonderful app, but seriously, best key management app there is.) its also open source, I wonder if you could steal some code from them, and use their key management interface. Reasons I need this new phone, I need to securely wipe the old key, export the old key to a file, and then re-import it. Lost phone, in case I loose my phone, I can reuse the same gpg key. Device immaterial - once I have a back up file of the private key, I can store that on an encrypted parition, or container, and bounce that around as I see fit between devices, PCs, internet storage, etc.. I can then bring it back when I need it. I can also switch between phones at will. For public keys. in addition to reasons 1-3, having a good back up of my friend's public keys, I can easily re-import them, and share them with other people as needed, to make the fewest amounts of key exchanges needed. I can set up phones for people with all the public keys they need. just load them up, and go. This would just make an already good app fucking awesome. \n            #### \n            Knowledge Base Summary: [Returns the signaling key from the shared preferences.,Sets the signaling key for the given context in the shared preferences.,Clean up the master secret.,Gets the last seen version of the app from shared preferences.]\n            #### \n            Extracted Syntactic ambiguity segment(s):\n            "
+}

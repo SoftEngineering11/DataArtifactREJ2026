@@ -1,0 +1,43 @@
+{
+    "unique_id": "35272e4d-076c-4e87-9a76-7e011b238825",
+    "type": "Pragmatic",
+    "id": 96,
+    "feature_request_number": 916,
+    "feature_version": "2.0.3",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 2,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Syntactic": 1,
+        "Pragmatic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Syntactic-Analytical": 1,
+        "Pragmatic-Referential": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 916 | Request Title - Allow to set and sync Contact Pictures | Request Description - Allow users to set their own contact picture and sync it to other TextSecure users. In contrast to WhatsApp, provide those pictures to the system contact list to be used in any app, including but not limited to TextSecure. Is this possible using a SyncAdapter ( #890 ) coupled with a ContentProvider?",
+    "category": "Ambiguity",
+    "label": "Pragmatic",
+    "subclass": "Referential",
+    "comment": "The demonstrative 'this' can point to several concepts earlier in the text, which creates multiple possible interpretations.",
+    "question": [
+        "When you wrote \"is this possible using...\", does \"this\" refer to setting a user's own contact picture, syncing to other TextSecure users, providing contact pictures to the system contact list, sharing pictures from the system contact list to varied applications, all of the above, or something else?"
+    ],
+    "interpretation": "setting a user's own contact picture; syncing to other TextSecure users; providing contact pictures to the system contact list; sharing pictures from the system contact list to varied applications; all of the above",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "this",
+    "start": 328,
+    "end": 332,
+    "missing_information": "\"set their own contact picture\", \"sync it to other TextSecure users\", \"provide those pictures to the system contact list to be used in any app\", \"Is this possible using a SyncAdapter ( #890 ) coupled with a ContentProvider\"",
+    "transformed_missing_information": [
+        "set their own contact picture",
+        "sync it to other TextSecure users",
+        "provide those pictures to the system contact list to be used in any app",
+        "Is this possible using a SyncAdapter ( #890 ) coupled with a ContentProvider"
+    ],
+    "prompt": "\n            Pragmatic ambiguity: Pragmatic ambiguity occurs when a sentence has several meanings in the context in which it is uttered. The context comprises the language context, i.e., the sentences uttered before and after, and the context beyond language, i.e., the situation, the background knowledge, and expectations of the speaker or hearer and the writer or reader.\n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Pragmatic ambiguity from the statement.\n            Multiple segments may contain Pragmatic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 916 | Request Title - Allow to set and sync Contact Pictures | Request Description - Allow users to set their own contact picture and sync it to other TextSecure users. In contrast to WhatsApp, provide those pictures to the system contact list to be used in any app, including but not limited to TextSecure. Is this possible using a SyncAdapter ( #890 ) coupled with a ContentProvider? \n            #### \n            Knowledge Base Summary: [Sets the preference for whether the user has been prompted to set Signal as the default SMS provider.,Returns whether the user has been prompted to set Signal as their default SMS app.,Sets the text of the message to be retrieved.,Checks if the app is the default SMS provider on the device.]\n            #### \n            Extracted Pragmatic ambiguity segment(s):\n            "
+}

@@ -1,0 +1,38 @@
+{
+    "unique_id": "f01943a6-2018-441d-ab5e-0d6ac3216d55",
+    "type": "Syntactic",
+    "id": 53,
+    "feature_request_number": 695,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity",
+    "FinalDefectCount": {
+        "Ambiguity": 1,
+        "Incompleteness": 0
+    },
+    "FinalAmbiguityClassType": {
+        "Syntactic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Syntactic-Elliptical": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 695 | Request Title - Don't show letter count, when SMS mode disabled | Request Description - When I start typing, the count of letters is shown at the bottom left corner, though I have the SMS mode completely disabled.",
+    "category": "Ambiguity",
+    "label": "Syntactic",
+    "subclass": "Elliptical",
+    "comment": "An ellipsis is a gap in a sentence cause by omission of a lexically or syntactically necessary constituent. Missing words that would specify where the word count is appearing. ",
+    "question": [
+        "Where exactly do you see the word count?"
+    ],
+    "interpretation": "At the bottom left corner of the app; At the bottom left corner of the screen; At the bottom left corner of the messaging GUI;",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "at the bottom left corner,",
+    "start": 162,
+    "end": 188,
+    "missing_information": "\"No Defect Found\"",
+    "transformed_missing_information": [
+        "No Defect Found"
+    ],
+    "prompt": "\n            Syntactic ambiguity: Syntactic ambiguity occurs when a given sequence of words can be given more than one grammatical structure, and each has a different meaning. In the terminology of compiler construction, syntactic ambiguity occurs when a sentence has more than one parse. \n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Syntactic ambiguity from the statement.\n            Multiple segments may contain Syntactic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 695 | Request Title - Don't show letter count, when SMS mode disabled | Request Description - When I start typing, the count of letters is shown at the bottom left corner, though I have the SMS mode completely disabled. \n            #### \n            Knowledge Base Summary: [Updates the character count and enables/disables the send button based on the length of the text in the input field.,Calculates the number of characters remaining for the current message and updates the text view to display it.,Formats the phone number as the user types it in.,If we're not the default SMS app, and we haven't prompted the user yet, prompt them to change the default SMS app.,Checks if the given SMS message is exempt from being processed by the app.,This method is called to notify you that, within s, the count characters beginning at start are about to be replaced by new text with length after. It is an error to attempt to make changes to s from this callback.,Get the stripped message for a multipart SMS.,Listener for the manual MMS preference. Shows a toast message and sets the preference to true when changed.,Handles sending an MMS message, either with or without changing the radio state. If connectivity is not possible, a toast message is displayed.,Disables the recipients panel and clears any text in the recipients text field.]\n            #### \n            Extracted Syntactic ambiguity segment(s):\n            "
+}

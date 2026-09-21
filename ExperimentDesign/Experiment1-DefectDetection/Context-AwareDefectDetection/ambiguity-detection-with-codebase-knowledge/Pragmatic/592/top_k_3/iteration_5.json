@@ -1,0 +1,39 @@
+{
+    "unique_id": "693d5815-de89-4bf8-a814-f291a67bc545",
+    "type": "Pragmatic",
+    "id": 71,
+    "feature_request_number": 592,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 3,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Pragmatic": 3
+    },
+    "FinalAmbiguitySubType": {
+        "Pragmatic-Deictic": 3
+    },
+    "TextUsedForAnnotation": "Request Number - 592 | Request Title - Feature - Emoji | Request Description - I hate emoji, but this guy on this issue requested it and I figure I'll help him/you out by making a new issue/feature request.",
+    "category": "Ambiguity",
+    "label": "Pragmatic",
+    "subclass": "Deictic",
+    "comment": "The highlighted text refers to a person the author can currently view at the time of writing, but readers afterward must attempt to resolve the identity of later using contextual information about the author, which creates multiple possibilities for the target of the demonstrative and pronoun.",
+    "question": [
+        "When you wrote \"this guy\", can you be more descriptive about the identity or nature of the person being referred to?"
+    ],
+    "interpretation": "any theoretical person the author is currently looking at",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "this guy",
+    "start": 97,
+    "end": 105,
+    "missing_information": "\"Him/you\", \"New issue/feature request\"",
+    "transformed_missing_information": [
+        "Him/you",
+        "New issue/feature request"
+    ],
+    "prompt": "\n            Pragmatic ambiguity: Pragmatic ambiguity occurs when a sentence has several meanings in the context in which it is uttered. The context comprises the language context, i.e., the sentences uttered before and after, and the context beyond language, i.e., the situation, the background knowledge, and expectations of the speaker or hearer and the writer or reader.\n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Pragmatic ambiguity from the statement.\n            Multiple segments may contain Pragmatic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 592 | Request Title - Feature - Emoji | Request Description - I hate emoji, but this guy on this issue requested it and I figure I'll help him/you out by making a new issue/feature request. \n            #### \n            Knowledge Base Summary: [Emojifies the given text using the large emoji style.,Get the Emoji instance for this context.,Handles click events on the emoji grid, replacing the selected text with the corresponding emoji and updating the recently used emojis if necessary.]\n            #### \n            Extracted Pragmatic ambiguity segment(s):\n            "
+}

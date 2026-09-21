@@ -1,0 +1,47 @@
+{
+    "unique_id": "f7926d58-a233-452f-9f36-743adecb64a1",
+    "type": "Pragmatic",
+    "id": 44,
+    "feature_request_number": 555,
+    "feature_version": "1.0.6",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity",
+    "FinalDefectCount": {
+        "Ambiguity": 5,
+        "Incompleteness": 0
+    },
+    "FinalAmbiguityClassType": {
+        "Syntactic": 2,
+        "Pragmatic": 2,
+        "Semantic": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Syntactic-Elliptical": 2,
+        "Pragmatic-Referential": 2,
+        "Semantic-Scope": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 555 | Request Title - Not working in dual sim phone | Request Description - My friend has a dual sim Lava iris 405 and i have samsung galaxy s3. we both have installed the TextSecure when i start secure session, it sends Key exchange message and its received in my friends. After that it says Received and processed key exchange message but he is unable to send me any message, it says error sending. i know its giving problem because its a dual sim phone, text secure app is not able to send sms from particular sim and giving this error. Is dual sim phone supported by textSecure?",
+    "category": "Ambiguity",
+    "label": "Pragmatic",
+    "subclass": "Referential",
+    "comment": "\"It\" is referring to multiple tokens from the previous sentence. ",
+    "question": [
+        "What is \"it\" referring to in the following sentence: \"After that it says Received\"?"
+    ],
+    "interpretation": "Message; app; phone",
+    "affectsDownstream": "No",
+    "affectDescription": "",
+    "text": "After that it says Received",
+    "start": 291,
+    "end": 318,
+    "missing_information": "\"Not working in dual sim phone\", \"it sends Key exchange message and its received in my friends\", \"it says Received and processed key exchange message\", \"i know its giving problem because its a dual sim phone\", \"text secure app is not able to send sms from particular sim\", \"Is dual sim phone supported by textSecure?\"",
+    "transformed_missing_information": [
+        "Not working in dual sim phone",
+        "it sends Key exchange message and its received in my friends",
+        "it says Received and processed key exchange message",
+        "i know its giving problem because its a dual sim phone",
+        "text secure app is not able to send sms from particular sim",
+        "Is dual sim phone supported by textSecure?"
+    ],
+    "prompt": "\n            Pragmatic ambiguity: Pragmatic ambiguity occurs when a sentence has several meanings in the context in which it is uttered. The context comprises the language context, i.e., the sentences uttered before and after, and the context beyond language, i.e., the situation, the background knowledge, and expectations of the speaker or hearer and the writer or reader.\n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Pragmatic ambiguity from the statement.\n            Multiple segments may contain Pragmatic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 555 | Request Title - Not working in dual sim phone | Request Description - My friend has a dual sim Lava iris 405 and i have samsung galaxy s3. we both have installed the TextSecure when i start secure session, it sends Key exchange message and its received in my friends. After that it says Received and processed key exchange message but he is unable to send me any message, it says error sending. i know its giving problem because its a dual sim phone, text secure app is not able to send sms from particular sim and giving this error. Is dual sim phone supported by textSecure? \n            #### \n            Knowledge Base Summary: [Send an MMS message to the specified recipients, optionally using a secure session.,Checks if the given SMS message is exempt from being processed by the app.]\n            #### \n            Extracted Pragmatic ambiguity segment(s):\n            "
+}

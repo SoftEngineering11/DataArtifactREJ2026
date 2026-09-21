@@ -1,0 +1,38 @@
+{
+    "unique_id": "c8ff295b-7b73-4ae9-8882-a924c02e5f6f",
+    "type": "Semantic",
+    "id": 27,
+    "feature_request_number": 801,
+    "feature_version": "2.0.3",
+    "app_name": "Signal",
+    "FinalDefectType": "Ambiguity/Incompleteness",
+    "FinalDefectCount": {
+        "Ambiguity": 2,
+        "Incompleteness": 1
+    },
+    "FinalAmbiguityClassType": {
+        "Semantic": 1,
+        "Lexical": 1
+    },
+    "FinalAmbiguitySubType": {
+        "Semantic-Scope": 1,
+        "Lexical-Polysemy": 1
+    },
+    "TextUsedForAnnotation": "Request Number - 801 | Request Title - Feature request: Mute Group (or any user) | Request Description - Sometimes friends in a group are discussing something I'm not interested in and my phone would go nuts vibrating and ringing all the time. A \"Mute for X minutes/hours\" feature would be awesome.",
+    "category": "Ambiguity",
+    "label": "Semantic",
+    "subclass": "Scope",
+    "comment": "The word \"any\" can have a specific or non-specific meaning, affecting the scope implied by the term and creating multiple possible meanings.",
+    "question": [
+        "When you wrote \"any user\", do you mean \"a selected user\", \"all applicable users\", or something else?"
+    ],
+    "interpretation": "a selected; all applicable",
+    "affectsDownstream": "Yes",
+    "affectDescription": "Affects whether the implementation is focused on by-user/group notifications or the application as a whole",
+    "text": "any",
+    "start": 71,
+    "end": 74,
+    "missing_information": "No Defect Found.",
+    "transformed_missing_information": [],
+    "prompt": "\n            Semantic ambiguity: Semantic ambiguity occurs when a sentence has more than one way of reading it within its context, although it contains no lexical or syntactic ambiguity. Semantic ambiguity can be viewed as ambiguity with respect to the logical form, usually expressed in predicate logic, of a sentence.\n            You are a software analyst specializing in ambiguity detection in GitHub feature requests. \n            Carefully read the given statement and the knowledge summary of the codebase. With the provided statement and the knowledge summary of the codebase, extract and list any text segments containing Semantic ambiguity from the statement.\n            Multiple segments may contain Semantic ambiguity; include all of them in a single comma-separated list.\n            Make sure to have all elements of the list in quotation marks. If no segments are found, return No Defect Found.\n            Do not give any explanations, reasoning, or any extra text that is not from the given statement.\n            Statement: Request Number - 801 | Request Title - Feature request: Mute Group (or any user) | Request Description - Sometimes friends in a group are discussing something I'm not interested in and my phone would go nuts vibrating and ringing all the time. A \"Mute for X minutes/hours\" feature would be awesome. \n            #### \n            Knowledge Base Summary: [Returns whether or not the notification vibrate preference is enabled.,Returns the notification ringtone preference value from the given context.]\n            #### \n            Extracted Semantic ambiguity segment(s):\n            "
+}
